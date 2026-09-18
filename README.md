@@ -10,6 +10,10 @@ studies/
     index.html          # self-contained study
     reference-notes.md  # source observations and comparison checklist
     DESIGN-SKILL.md     # reusable design system and build rules
+  adaptive-experience/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
 ```
 
 ## Run a study
@@ -18,7 +22,7 @@ Open its `index.html` directly, or serve the repository:
 
 ```bash
 python3 -m http.server 4173
-# http://localhost:4173/studies/interface-foundations/
+# http://localhost:4173/studies/adaptive-experience/
 ```
 
 ## Study policy
