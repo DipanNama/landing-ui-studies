@@ -171,7 +171,12 @@ footer{border-top:1px solid var(--line);padding:64px 0 120px;color:var(--fog);fo
  footer{padding-bottom:170px}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-</style></head>
+</style><style>
+.showcase{margin:0;padding:8px 24px 72px}
+.showcase img{display:block;width:100%;max-width:1120px;height:auto;margin:0 auto;border-radius:18px;border:1px solid rgba(212,255,79,.18);box-shadow:0 30px 70px -26px rgba(0,0,0,.7)}
+@media (max-width:640px){.showcase{padding:8px 16px 48px}.showcase img{border-radius:12px}}
+</style>
+</head>
 <body>
 <header class="nav"><div class="wrap"><span class="brand">Weekend Build Lab</span>
 <nav class="nav-links" id="navlinks"><a href="#program">For Teams</a><a href="#schedule">Field Notes</a><a href="#faq">Contact</a><a href="#final">Teach With Us</a><a href="#final">Log in</a><a class="nav-cta" href="#final">Browse Programs</a></nav>
@@ -196,7 +201,7 @@ footer{border-top:1px solid var(--line);padding:64px 0 120px;color:var(--fog);fo
   </div>
  </div>
 </section>
-<section class="backers"><div class="wrap">
+<figure class="showcase"><img src="./showcase.jpg" alt="Isometric illustration of a laptop with code, an AI robot companion and lime geometric shapes" width="1429" height="804" loading="lazy"></figure><section class="backers"><div class="wrap">
  <div class="section-head"><div class="eyebrow">Backed by Practitioners</div>
  <h2>Built with operators who ship for a living</h2>
  <p>Advisors and angel backers from products you already use every day.</p></div>

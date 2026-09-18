@@ -233,6 +233,11 @@ footer .note{margin-left:auto}
   .moon-disc{width:480px;height:480px;bottom:-280px}
 }
 </style>
+<style>
+.showcase{margin:0;padding:8px 24px 72px}
+.showcase img{display:block;width:100%;max-width:1120px;height:auto;margin:0 auto;border-radius:18px;border:1px solid rgba(245,243,157,.14);box-shadow:0 30px 70px -26px rgba(0,0,0,.7)}
+@media (max-width:640px){.showcase{padding:8px 16px 48px}.showcase img{border-radius:12px}}
+</style>
 </head>
 <body>
 
@@ -293,7 +298,7 @@ footer .note{margin-left:auto}
 </div>
 
 <!-- INTRO + TRY -->
-<section id="try" style="position:relative;overflow:hidden">
+<figure class="showcase"><img src="./showcase.jpg" alt="Selene documentation site page with sidebar navigation, code blocks and table of contents" width="1429" height="804" loading="lazy"></figure><section id="try" style="position:relative;overflow:hidden">
   <div class="wrap">
     <p class="lede">Selene is a <span class="acc">React</span> documentation toolkit for <span class="acc">writers and engineers</span>, crafted in the open. Powerful features for your docs workflow, deep customizability for your taste, and it plays nicely with any framework, CMS &mdash; anything.</p>
     <div class="center" style="margin-top:64px">
