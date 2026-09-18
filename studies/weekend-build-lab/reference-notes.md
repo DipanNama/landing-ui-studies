@@ -45,3 +45,4 @@ Sales landing page for a free 2-day live "Generative AI Mastermind" workshop. Pu
 - New fictional brand ("Weekend Build Lab"), original copy throughout, fictional stats/dates/backers/testimonials/logos.
 - Photography replaced with generated CSS scenes (layered gradient ridges, grain, glow) and CSS-drawn card visuals.
 - Keeps the system: dark cinematic hero + stat row, trust wall, logo strip, program cards, light schedule switcher, testimonial grid, split FAQ, sticky conversion bar with countdown, single lime accent.
+
