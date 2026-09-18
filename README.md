@@ -18,6 +18,10 @@ studies/
     index.html
     reference-notes.md
     DESIGN-SKILL.md
+  design-extractor/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
 ```
 
 ## Run a study
