@@ -47,6 +47,10 @@ studies/
     index.html
     reference-notes.md
     DESIGN-SKILL.md
+  command-center/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
 ```
 
 ## Run a study
