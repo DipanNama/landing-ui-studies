@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landing UI Studies</title>
+<meta name="description" content="A growing collection of landing-page UI studies, each with a reusable design skill.">
+<style>
+:root{color-scheme:light dark;--bg:#fafaf8;--fg:#141412;--muted:#6b6b64;--line:#e4e4de;--accent:#3478f6}
+@media (prefers-color-scheme:dark){:root{--bg:#101010;--fg:#f2f2ee;--muted:#9a9a92;--line:#262624}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:64px 24px 96px}
+header{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:48px}
+.brand{font-weight:650;letter-spacing:-0.01em}.brand a{color:inherit;text-decoration:none}
+.tag{font-size:13px;color:var(--muted)}
+h1{font-size:40px;line-height:1.1;letter-spacing:-0.03em;margin:0 0 12px}
+.lede{color:var(--muted);margin:0 0 48px;max-width:56ch}
+.study{display:block;border:1px solid var(--line);border-radius:12px;padding:20px 24px;text-decoration:none;color:inherit;margin-bottom:16px;transition:border-color .15s}
+.study:hover{border-color:var(--accent)}
+.study h2{margin:0 0 4px;font-size:20px;letter-spacing:-0.01em}
+.study p{margin:0;color:var(--muted);font-size:14px}
+.route{display:inline-block;margin-top:10px;font:12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent)}
+footer{margin-top:64px;border-top:1px solid var(--line);padding-top:16px;font-size:13px;color:var(--muted)}
+code{font:13px ui-monospace,SFMono-Regular,Menlo,monospace}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><span class="brand"><a href="/">Landing UI Studies</a></span><span class="tag">private study collection</span></header>
+<main>
+<h1>Studies</h1>
+<p class="lede">Each folder under <code>studies/</code> is a self-contained landing-page study with its own route, reference notes, and a reusable DESIGN-SKILL.md.</p>
+<a class="study" href="/studies/interface-foundations/">
+<h2>Interface Foundations Lab</h2>
+<p>Annotated-editorial landing study based on the visual system of uidesigncourse.com.</p>
+<span class="route">/studies/interface-foundations/</span>
+</a>
+</main>
+<footer>New studies are added under <code>/studies/&lt;name&gt;/</code> and keep their own route.</footer>
+</div>
+</body>
+</html>
