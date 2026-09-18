@@ -6,6 +6,10 @@ A private collection of landing-page interface studies. Each project separates v
 
 ```text
 studies/
+  publish-flow/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
   vector-motion-lab/
     index.html
     reference-notes.md
