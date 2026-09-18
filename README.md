@@ -4,21 +4,29 @@ A private collection of landing-page interface studies. Each project separates v
 
 ## Structure
 
+```text
+studies/
   line-illustration-kit/
     index.html
     reference-notes.md
     DESIGN-SKILL.md
-```text
-studies/
   interface-foundations/
-    index.html          # self-contained study
-    reference-notes.md  # source observations and comparison checklist
-    DESIGN-SKILL.md     # reusable design system and build rules
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
   adaptive-experience/
     index.html
     reference-notes.md
     DESIGN-SKILL.md
   design-extractor/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
+  weekend-build-lab/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
+  flux-engine/
     index.html
     reference-notes.md
     DESIGN-SKILL.md
