@@ -59,6 +59,10 @@ studies/
     index.html
     reference-notes.md
     DESIGN-SKILL.md
+  component-atlas/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
   command-center/
     index.html
     reference-notes.md
@@ -77,3 +81,4 @@ python3 -m http.server 4173
 ## Study policy
 
 These studies reproduce layout logic, proportion, hierarchy, responsive behavior, and interaction ideas for private learning. They use original copy and locally authored visual substitutes rather than copying source branding, course content, media, fonts, or proprietary assets.
+
