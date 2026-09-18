@@ -30,6 +30,11 @@ studies/
     index.html
     reference-notes.md
     DESIGN-SKILL.md
+
+  interactive-systems-journal/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
 ```
 
 ## Run a study
