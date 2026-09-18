@@ -35,6 +35,10 @@ studies/
     index.html
     reference-notes.md
     DESIGN-SKILL.md
+  selene-docs/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
 ```
 
 ## Run a study
