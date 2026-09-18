@@ -53,12 +53,11 @@ h1{font-size:clamp(38px,6.2vw,64px);line-height:1.08;letter-spacing:-0.03em;font
 .dot{width:11px;height:11px;border-radius:50%}
 .urlbar{flex:1;max-width:420px;margin:0 auto;background:#374151;border-radius:8px;color:#aeb6c2;font:12px/1 var(--mono);padding:8px 14px;text-align:center}
 .chrome-icons{display:flex;gap:12px;align-items:center}
-.chrome-icons i{width:14px;height:14px;border-radius:4px;background:#4b5563;display:block}
+.chrome-icons svg{display:block;color:#9aa3b2}
 .browser-body{display:grid;grid-template-columns:1fr 300px;min-height:340px;background:#fff;text-align:left}
 .page-side{padding:34px 30px;border-right:1px solid var(--line);background:#fff}
 .page-nav{display:flex;gap:18px;align-items:center;margin-bottom:30px}
-.page-nav i{width:34px;height:10px;border-radius:5px;background:#e4e4ea;display:block}
-.page-nav i:first-child{width:52px;background:#c9ccd6}
+
 .page-h{font-size:34px;font-weight:600;letter-spacing:-0.02em;color:#141419;margin:0 0 14px}
 .page-sub{width:70%;height:12px;border-radius:6px;background:#ececf1;margin-bottom:10px}
 .page-sub.short{width:48%}
@@ -69,7 +68,7 @@ h1{font-size:clamp(38px,6.2vw,64px);line-height:1.08;letter-spacing:-0.03em;font
 .ptab{font:500 11px/1 var(--sans);color:#9aa1ad;padding:6px 10px;border-radius:7px}
 .ptab.on{background:#2f3540;color:#fff}
 .panel-tools{display:flex;gap:10px;padding:10px 14px;border-bottom:1px solid #2e333d}
-.panel-tools i{width:13px;height:13px;border-radius:4px;background:#3a4150;display:block}
+.panel-tools svg{display:block;color:#8b93a5}
 .panel-list{padding:12px 14px;display:grid;gap:9px;overflow:hidden}
 .prow{display:flex;align-items:center;gap:9px;background:#272c35;border:1px solid #313743;border-radius:9px;padding:8px 10px}
 .prow .thumb{width:22px;height:22px;border-radius:6px;flex:none}
@@ -202,6 +201,11 @@ footer{margin-top:120px;background:#f4f4f6;border-top:1px solid var(--line)}
   .rating-link{margin-left:0}
   .lede{font-size:16px}
 }
+img.avatar{display:block;object-fit:cover}
+.pnav-logo{font-weight:700;font-size:13px;color:#141419;letter-spacing:-0.01em;margin-right:auto}
+.pnav{font-size:11px;color:#8b8e95}
+.page-sub-t{font-size:12px;line-height:1.55;color:#8b8e95;margin:0;max-width:78%}
+@media (max-width:620px){.float-cta{bottom:14px;padding:9px 16px;font-size:13px}body{padding-bottom:70px}}
 </style>
 <style>
 .showcase{margin:0;padding:8px 24px 72px}
@@ -243,21 +247,20 @@ footer{margin-top:120px;background:#f4f4f6;border-top:1px solid var(--line)}
     <div class="browser">
       <div class="chrome-bar">
         <span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span>
-        <span class="urlbar">any-site.com</span>
-        <span class="chrome-icons"><i></i><i></i><i></i><i style="background:#3a8bff"></i></span>
+        <span class="urlbar">faraway.travel</span>
+        <span class="chrome-icons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="14" height="14"><path d="M8.5 12.75L10.75 15L8.5 17.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><path d="M4.655 4.505C3.4774 5.6413 2.75 7.2359 2.75 9C2.75 12.452 5.55 15.25 9 15.25C9.6 15.25 10.17 15.166 10.72 15.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><path d="M9.5 5.25L7.25 3L9.5 0.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.35"></path><path d="M13.3444 13.4937C14.5146 12.3575 15.25 10.7634 15.25 9C15.25 5.548 12.45 2.75 9.00002 2.75C8.42002 2.75 7.86002 2.82895 7.33002 2.97595" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.35"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="14" height="14"><path d="M14.25,16.25l-5.25-3.5-5.25,3.5V3.75c0-1.105,.895-2,2-2h6.5c1.105,0,2,.895,2,2v12.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="14" height="14"><path d="M14.75,8.25c.372,0,.716,.118,1,.317v-2.317c0-1.104-.895-2-2-2h-2.317c.198-.284,.317-.627,.317-1,0-.967-.784-1.75-1.75-1.75s-1.75,.783-1.75,1.75c0,.373,.118,.716,.317,1h-2.317c-1.105,0-2,.896-2,2v2.317c-.284-.198-.628-.317-1-.317-.966,0-1.75,.783-1.75,1.75s.784,1.75,1.75,1.75c.372,0,.716-.118,1-.317v2.317c0,1.104,.895,2,2,2h2.317c-.198-.284-.317-.627-.317-1,0-.967,.784-1.75,1.75-1.75s1.75,.783,1.75,1.75c0,.373-.118,.716-.317,1h2.317c1.105,0,2-.896,2-2v-2.317c-.284,.198-.628,.317-1,.317-.966,0-1.75-.783-1.75-1.75s.784-1.75,1.75-1.75Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect width="14" height="14" rx="4" fill="#3a8bff"/><path d="M3 3l4.5 8 1.3-3.1L11.6 7 3 3z" fill="#fff"/></svg></span>
       </div>
       <div class="browser-body">
         <div class="page-side">
-          <div class="page-nav"><i></i><i></i><i></i><i></i></div>
-          <p class="page-h">Big black headline</p>
-          <div class="page-sub"></div>
-          <div class="page-sub short"></div>
-          <span class="page-btn">Buy the thing</span>
+          <div class="page-nav"><span class="pnav-logo">faraway</span><span class="pnav">Trips</span><span class="pnav">Journal</span><span class="pnav">Gear</span><span class="pnav">About</span></div>
+          <p class="page-h">Go farther with less.</p>
+          <p class="page-sub-t">Light-packing guides, weekend routes and field notes from people who travel with one bag.</p>
+          <span class="page-btn">Plan a weekend</span>
         </div>
         <div class="panel">
           <div class="panel-head"><span class="logo-mark" style="width:16px;height:16px;border-radius:4px"><svg width="9" height="9" viewBox="0 0 12 12" fill="none"><path d="M2 2l4 8 1.4-3.2L10.6 6 2 2z" fill="#fff"/></svg></span>Spectra</div>
           <div class="panel-tabs"><span class="ptab">Styles</span><span class="ptab on">Assets</span><span class="ptab">Inspect</span><span class="ptab">Design</span></div>
-          <div class="panel-tools"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="panel-tools"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="13" height="13"><path d="M15.75 15.75L11.6386 11.6386" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.35"></path><path d="M7.75 13.25C10.7875 13.25 13.25 10.7875 13.25 7.75C13.25 4.7125 10.7875 2.25 7.75 2.25C4.7125 2.25 2.25 4.7125 2.25 7.75C2.25 10.7875 4.7125 13.25 7.75 13.25Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="13" height="13"><path d="M3.762,14.989l6.074-6.075c.781-.781,2.047-.781,2.828,0l2.586,2.586" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></path><rect x="2.75" y="2.75" width="12.5" height="12.5" rx="2" ry="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></rect><circle cx="6.25" cy="7.25" r="1.25" fill="currentColor" data-stroke="none" opacity="0.35"></circle></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="13" height="13"><polyline points="11.5 5.75 9 8.25 6.5 5.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></polyline><line x1="9" y1="8.25" x2="9" y2="2.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></line><path d="M16.214,9.75h-4.464v1c0,.552-.448,1-1,1h-3.5c-.552,0-1-.448-1-1v-1H1.787" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12,2.75h.137c.822,0,1.561,.503,1.862,1.269l2.113,5.379c.092,.233,.138,.481,.138,.731v3.121c0,1.105-.895,2-2,2H3.75c-1.105,0-2-.895-2-2v-3.121c0-.25,.047-.498,.138-.731l2.113-5.379c.301-.765,1.039-1.269,1.862-1.269h.137" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="13" height="13"><path d="M8.36909 6.8934C8.06649 7.0539 7.78239 7.2617 7.52799 7.517L7.51799 7.527C6.13699 8.908 6.13699 11.146 7.51799 12.527L9.69299 14.702C11.074 16.083 13.312 16.083 14.693 14.702L14.703 14.692C16.084 13.311 16.084 11.073 14.703 9.692L13.9406 8.9296" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.35"></path><path d="M9.63289 11.1066C9.93549 10.9461 10.2196 10.7383 10.474 10.483L10.484 10.473C11.865 9.09199 11.865 6.85399 10.484 5.47299L8.30899 3.29799C6.92799 1.91699 4.68999 1.91699 3.30899 3.29799L3.29899 3.30799C1.91799 4.68899 1.91799 6.92699 3.29899 8.30799L4.06139 9.07039" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="13" height="13"><line x1="6.25" y1="4.237" x2="9" y2="9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></line><line x1="6.25" y1="13.764" x2="9" y2="9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></line><line x1="14.5" y1="9" x2="9" y2="9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></line><circle cx="9" cy="9" r="5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="9" y1="1.75" x2="9" y2="3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.721" y1="5.375" x2="4.237" y2="6.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="1.75" y1="9" x2="3.5" y2="9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="16.25" y1="9" x2="14.5" y2="9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.721" y1="12.625" x2="4.237" y2="11.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="9" y1="16.25" x2="9" y2="14.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="12.625" y1="15.279" x2="11.75" y2="13.763" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="5.375" y1="15.279" x2="6.25" y2="13.763" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="15.279" y1="12.625" x2="13.763" y2="11.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="15.279" y1="5.375" x2="13.763" y2="6.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="12.625" y1="2.721" x2="11.75" y2="4.237" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="5.375" y1="2.721" x2="6.25" y2="4.237" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line></svg></div>
           <div class="panel-list">
             <div class="prow"><span class="thumb" style="background:linear-gradient(135deg,#f6d365,#fda085)"></span><span class="meta"><b>hero-poster.png</b><span>1440 &times; 900</span></span><span class="size">812 KB</span></div>
             <div class="prow"><span class="thumb" style="background:linear-gradient(135deg,#a1c4fd,#c2e9fb)"></span><span class="meta"><b>logo-mark.svg</b><span>vector</span></span><span class="size">4 KB</span></div>
@@ -403,7 +406,7 @@ footer{margin-top:120px;background:#f4f4f6;border-top:1px solid var(--line)}
     </div>
     <div class="masonry">
       <div class="tcard">
-        <div class="thead"><span class="avatar" style="background:#5b8def">M</span><span><span class="tname">Mira Kulkarni</span><br><span class="tdate">May 3, 2026</span></span><span class="stars">★★★★★</span></div>
+        <div class="thead"><img class="avatar" style="background:#5b8def" src="assets/av-mira.svg" alt="Mira Kulkarni" width="34" height="34"><span><span class="tname">Mira Kulkarni</span><br><span class="tdate">May 3, 2026</span></span><span class="stars">★★★★★</span></div>
         <p>Pulled a full palette and type scale off a site I admire in about ten seconds. This replaced three other tools for me.</p>
       </div>
       <div class="tcard social">
@@ -411,11 +414,11 @@ footer{margin-top:120px;background:#f4f4f6;border-top:1px solid var(--line)}
         <p>POV: you stop rebuilding buttons from screenshots because the tokens are just&hellip; there.</p>
       </div>
       <div class="tcard">
-        <div class="thead"><span class="avatar" style="background:#e2725b">J</span><span><span class="tname">Junaid Ansari</span><br><span class="tdate">Jun 18, 2026</span></span><span class="stars">★★★★★</span></div>
+        <div class="thead"><img class="avatar" style="background:#e2725b" src="assets/av-junaid.svg" alt="Junaid Ansari" width="34" height="34"><span><span class="tname">Junaid Ansari</span><br><span class="tdate">Jun 18, 2026</span></span><span class="stars">★★★★★</span></div>
         <p>The contrast grading is the quiet killer feature. I ship fewer accessibility fixes than I used to, by a lot.</p>
       </div>
       <div class="tcard">
-        <div class="thead"><span class="avatar" style="background:#8a5cf6">P</span><span><span class="tname">Petra Novak</span><br><span class="tdate">Jul 9, 2026</span></span><span class="stars">★★★★★</span></div>
+        <div class="thead"><img class="avatar" style="background:#8a5cf6" src="assets/av-petra.svg" alt="Petra Novak" width="34" height="34"><span><span class="tname">Petra Novak</span><br><span class="tdate">Jul 9, 2026</span></span><span class="stars">★★★★★</span></div>
         <p>Clean interface, no DevTools required. I hand the SPEC.md straight to my coding agent and the first draft is 80% right.</p>
       </div>
       <div class="tcard social">
@@ -423,17 +426,17 @@ footer{margin-top:120px;background:#f4f4f6;border-top:1px solid var(--line)}
         <p>day 41 of recreating sites I like: this extension is doing most of the measuring and I am not sorry.</p>
       </div>
       <div class="tcard">
-        <div class="thead"><span class="avatar" style="background:#28a08c">D</span><span><span class="tname">Diya Menon</span><br><span class="tdate">Aug 1, 2026</span></span><span class="stars">★★★★★</span></div>
+        <div class="thead"><img class="avatar" style="background:#28a08c" src="assets/av-diya.svg" alt="Diya Menon" width="34" height="34"><span><span class="tname">Diya Menon</span><br><span class="tdate">Aug 1, 2026</span></span><span class="stars">★★★★★</span></div>
         <p>Asset zip alone is worth it. Every icon and Lottie file on the page, sorted, in one click.</p>
       </div>
       <div class="tcard">
-        <div class="thead"><span class="avatar" style="background:#e8a13c">T</span><span><span class="tname">Tom&aacute;s Rivera</span><br><span class="tdate">Aug 22, 2026</span></span><span class="stars">★★★★★</span></div>
+        <div class="thead"><img class="avatar" style="background:#e8a13c" src="assets/av-tomas.svg" alt="Tomas Rivera" width="34" height="34"><span><span class="tname">Tom&aacute;s Rivera</span><br><span class="tdate">Aug 22, 2026</span></span><span class="stars">★★★★★</span></div>
         <p>I study one landing page a week with it. Fastest way I know to learn what good teams actually ship.</p>
       </div>
     </div>
     <div class="rating-bar">
       <span class="stack">
-        <span class="avatar" style="background:#5b8def">M</span><span class="avatar" style="background:#e2725b">J</span><span class="avatar" style="background:#8a5cf6">P</span><span class="avatar" style="background:#28a08c">D</span><span class="avatar more">+34</span>
+        <img class="avatar" style="background:#5b8def" src="assets/av-mira.svg" alt="Mira Kulkarni" width="34" height="34"><img class="avatar" style="background:#e2725b" src="assets/av-junaid.svg" alt="Junaid Ansari" width="34" height="34"><img class="avatar" style="background:#8a5cf6" src="assets/av-petra.svg" alt="Petra Novak" width="34" height="34"><img class="avatar" style="background:#28a08c" src="assets/av-diya.svg" alt="Diya Menon" width="34" height="34"><span class="avatar more">+34</span>
       </span>
       <span class="rating-num">4.9</span><span class="stars">★★★★★</span>
       <span class="rating-txt">38 reviews on the extension store</span>
