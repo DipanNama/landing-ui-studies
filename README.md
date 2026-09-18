@@ -6,6 +6,14 @@ A private collection of landing-page interface studies. Each project separates v
 
 ```text
 studies/
+  northstar-product-os/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
+  relay/
+    index.html
+    reference-notes.md
+    DESIGN-SKILL.md
   publish-flow/
     index.html
     reference-notes.md
