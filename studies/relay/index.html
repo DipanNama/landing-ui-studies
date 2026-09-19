@@ -417,7 +417,7 @@ img.avatar{display:inline-block;object-fit:cover;border-radius:50%}
 .showcase img{display:block;width:100%;max-width:1120px;height:auto;margin:0 auto;border-radius:18px;border:1px solid rgba(61,214,140,.18);box-shadow:0 30px 70px -26px rgba(0,0,0,.7)}
 @media (max-width:640px){.showcase{padding:8px 16px 48px}.showcase img{border-radius:12px}}
 </style>
-<style>.mail{padding:11px;background:#e9eaed;min-height:300px}.mail header{height:30px;background:white;display:flex;justify-content:space-between;align-items:center;padding:0 9px;font-size:7px}.mail header em{background:#111;color:white;padding:4px;font-style:normal}.mail main{width:72%;margin:auto;background:white;padding:17px;box-shadow:0 8px 24px #0002}.mail main small{font:700 6px monospace}.mail h4{font-size:20px;margin:10px 0 5px}.mail p{font-size:7px}.mail main div{height:73px;background:linear-gradient(140deg,#ff725c,#ffb15c 42%,#4a2d87);color:white;padding:9px;display:flex;align-items:end;font:bold 11px sans-serif}.mail main button{border:0;background:#111;color:white;padding:6px;font-size:6px;margin-top:7px}</style></head>
+<style>.mail{padding:11px;background:#e9eaed;min-height:300px}.mail header{height:30px;background:white;display:flex;justify-content:space-between;align-items:center;padding:0 9px;font-size:7px}.mail header em{background:#111;color:white;padding:4px;font-style:normal}.mail main{width:72%;margin:auto;background:white;padding:17px;box-shadow:0 8px 24px #0002}.mail main small{font:700 6px monospace}.mail h4{font-size:20px;margin:10px 0 5px}.mail p{font-size:7px}.mail main div{height:73px;background:linear-gradient(140deg,#ff725c,#ffb15c 42%,#4a2d87);color:white;padding:9px;display:flex;align-items:end;font:bold 11px sans-serif}.mail main button{border:0;background:#111;color:white;padding:6px;font-size:6px;margin-top:7px}</style><style>.finished-image{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit}.email-canvas{padding:0!important;overflow:hidden}</style></head>
 <body>
 <header class="site-header" id="siteHeader">
 <div class="header-inner">
@@ -615,7 +615,7 @@ img.avatar{display:inline-block;object-fit:cover;border-radius:50%}
 <div class="field-row"><label>From</label><span class="val">you@northco.dev</span></div>
 <div class="field-row"><label>To</label><span class="val"><span class="aud-chip"><svg fill="none" height="13" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="13"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="10" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path></svg> Newsletter subscribers</span></span></div>
 <div class="field-row"><label>Subject</label><span class="val">Weekly Product Letter</span></div>
-<div class="email-canvas mail"><header><b>Weekly Product Letter</b><span>Desktop ▾　 <em>Preview</em></span></header><main><small>NORTHCO / 07</small><h4>A calmer way to ship.</h4><p>This week: faster approvals, cleaner handoffs and one view of every launch.</p><div>PRODUCT<br/>UPDATE</div><button>See what shipped →</button></main></div>
+<div class="email-canvas mail"><img alt="Finished email campaign editor and newsletter" class="finished-image" loading="lazy" src="assets/finished-editor.webp"/></div>
 </div>
 </div>
 </div>
@@ -1061,3 +1061,4 @@ document.querySelectorAll('#controlTabs .ctab').forEach(tab => {
 </script>
 </body>
 </html>
+<style>.email-canvas{margin:14px;padding:9px!important;border:1px solid #2d2e33!important;border-radius:16px!important;background:#121316!important}.email-canvas img{border-radius:10px;transition:transform .35s ease}.editor-wrap:hover .email-canvas img{transform:translateY(-3px)}@media(prefers-reduced-motion:reduce){.email-canvas img{transition:none}.editor-wrap:hover .email-canvas img{transform:none}}</style>
