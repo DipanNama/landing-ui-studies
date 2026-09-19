@@ -162,6 +162,7 @@ button{font-family:inherit;cursor:pointer}
 /* reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
 .reveal.in{opacity:1;transform:none}
+img.avatar{display:inline-block;object-fit:cover;border-radius:50%}
 </style>
 <style>
 /* ---------- DX cards ---------- */
@@ -267,7 +268,7 @@ button{font-family:inherit;cursor:pointer}
 .rw-preview{background:#0b0b0d;display:flex;align-items:flex-start;justify-content:center;padding:38px 26px;overflow:auto}
 .email-card{background:#fff;color:#111;width:100%;max-width:400px;border-radius:12px;padding:36px 32px;box-shadow:0 20px 60px rgba(0,0,0,.45);text-align:center}
 .email-card p,.email-card .sig{text-align:left}
-.email-card .logo-dot{width:56px;height:56px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#22d3ee,#0891b2);margin-bottom:22px}
+.email-card .logo-dot{width:56px;height:56px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#22d3ee,#0891b2);margin-bottom:22px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:24px;font-family:Inter,system-ui,sans-serif}
 .email-card h4{font-size:20px;font-weight:600;margin-bottom:16px;color:#111}
 .email-card p{font-size:14px;line-height:22px;color:#3f3f46;margin-bottom:14px}
 .email-card p b{color:#111}
@@ -714,7 +715,7 @@ button{font-family:inherit;cursor:pointer}
           <div class="rw-code"><pre><span class="ln"><span class="tk-k">import</span> <span class="tk-p">{ Body, Button, Container, Head, Heading, Html, Text }</span></span><span class="ln"><span class="tk-p">  </span><span class="tk-k">from</span> <span class="tk-s">'@relay/components'</span><span class="tk-p">;</span></span><span class="ln"> </span><span class="ln"><span class="tk-k">export const</span> <span class="tk-f">WelcomeEmail</span> <span class="tk-p">= ({</span></span><span class="ln"><span class="tk-p">  username = </span><span class="tk-s">'Ana'</span><span class="tk-p">,</span></span><span class="ln"><span class="tk-p">  company = </span><span class="tk-s">'Northco'</span><span class="tk-p">,</span></span><span class="ln"><span class="tk-p">}) =&gt; (</span></span><span class="ln"><span class="tk-p">  &lt;</span><span class="tk-f">Html</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">    &lt;</span><span class="tk-f">Head</span> <span class="tk-p">/&gt;</span></span><span class="ln"><span class="tk-p">    &lt;</span><span class="tk-f">Body</span> <span class="tk-n">className</span><span class="tk-p">=</span><span class="tk-s">"bg-white my-auto mx-auto font-sans"</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">      &lt;</span><span class="tk-f">Container</span> <span class="tk-n">className</span><span class="tk-p">=</span><span class="tk-s">"my-10 mx-auto p-5 w-[465px]"</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">        &lt;</span><span class="tk-f">Heading</span> <span class="tk-n">className</span><span class="tk-p">=</span><span class="tk-s">"text-2xl text-center"</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">          Welcome to {company}, {username}!</span></span><span class="ln"><span class="tk-p">        &lt;/</span><span class="tk-f">Heading</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">        &lt;</span><span class="tk-f">Text</span> <span class="tk-n">className</span><span class="tk-p">=</span><span class="tk-s">"text-sm"</span><span class="tk-p">&gt;Hello {username},&lt;/</span><span class="tk-f">Text</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">        &lt;</span><span class="tk-f">Text</span> <span class="tk-n">className</span><span class="tk-p">=</span><span class="tk-s">"text-sm"</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">          We are glad to have you onboard at {company}.</span></span><span class="ln"><span class="tk-p">        &lt;/</span><span class="tk-f">Text</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">        &lt;</span><span class="tk-f">Button</span> <span class="tk-n">className</span><span class="tk-p">=</span><span class="tk-s">"bg-[#00A3FF] rounded text-white"</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">          Get Started</span></span><span class="ln"><span class="tk-p">        &lt;/</span><span class="tk-f">Button</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">      &lt;/</span><span class="tk-f">Container</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">    &lt;/</span><span class="tk-f">Body</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">  &lt;/</span><span class="tk-f">Html</span><span class="tk-p">&gt;</span></span><span class="ln"><span class="tk-p">);</span></span></pre></div>
           <div class="rw-preview">
             <div class="email-card">
-              <div class="logo-dot"></div>
+              <div class="logo-dot">N</div>
               <h4>Welcome to Northco, Ana!</h4>
               <p>Hello Ana,</p>
               <p>We are glad to have you onboard at <b>Northco</b>. Settle in, look around, and reach out if anything feels unclear.</p>
@@ -788,7 +789,7 @@ button{font-family:inherit;cursor:pointer}
     <div class="wrap reveal">
       <blockquote>&ldquo;Setup took one afternoon. Deliverability went from a weekly fire drill to something we simply never think about.&rdquo;</blockquote>
       <div class="who">
-        <div class="avatar">PN</div>
+        <img class="avatar" src="assets/av-priya.svg" alt="Priya Nair" width="38" height="38">
         <div>
           <div class="name">Priya Nair</div>
           <div class="role">VP Engineering at Northstack</div>
@@ -831,7 +832,7 @@ button{font-family:inherit;cursor:pointer}
           <div class="di"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 17H7a5 5 0 0 1 0-10h2m6 0h2a5 5 0 0 1 0 10h-2m-8-5h6"/></svg> <span>Webhooks</span></div>
           <div class="sp"></div>
           <div class="di"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 1-.1 1.2l2 1.6-2 3.4-2.4-1a7 7 0 0 1-2 1.2l-.4 2.6h-4l-.4-2.6a7 7 0 0 1-2-1.2l-2.4 1-2-3.4 2-1.6A7 7 0 0 1 5 12a7 7 0 0 1 .1-1.2l-2-1.6 2-3.4 2.4 1a7 7 0 0 1 2-1.2l.4-2.6h4l.4 2.6a7 7 0 0 1 2 1.2l2.4-1 2 3.4-2 1.6c.07.4.1.8.1 1.2Z"/></svg> <span>Settings</span></div>
-          <div class="user"><div class="avatar a3">D</div><span>you@domain.&hellip;</span></div>
+          <div class="user"><img class="avatar a3" src="assets/av-you.svg" alt="Your avatar" width="26" height="26"><span>you@domain.&hellip;</span></div>
         </div>
         <div class="dash-main">
           <div class="dash-top"><span>Help</span><span>Docs</span><span class="fb">Feedback</span></div>

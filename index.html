@@ -6,155 +6,227 @@
 <title>Landing UI Studies</title>
 <meta name="description" content="A growing collection of landing-page UI studies, each with a reusable design skill.">
 <style>
-:root{color-scheme:light dark;--bg:#fafaf8;--fg:#141412;--muted:#6b6b64;--line:#e4e4de;--accent:#3478f6}
-@media (prefers-color-scheme:dark){:root{--bg:#101010;--fg:#f2f2ee;--muted:#9a9a92;--line:#262624}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.wrap{max-width:720px;margin:0 auto;padding:64px 24px 96px}
-header{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:48px}
+:root{color-scheme:light dark;--bg:#fafaf8;--panel:#ffffff;--fg:#141412;--muted:#6b6b64;--faint:#9a9a92;--line:#e4e4de;--accent:#3478f6;--accent-soft:#3478f61a;--radius:16px}
+@media (prefers-color-scheme:dark){:root{--bg:#101010;--panel:#161615;--fg:#f2f2ee;--muted:#9a9a92;--faint:#77776f;--line:#262624;--accent-soft:#3478f626}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:18px 0}
 .brand{font-weight:650;letter-spacing:-0.01em}.brand a{color:inherit;text-decoration:none}
+.brand a:hover{color:var(--accent)}
 .tag{font-size:13px;color:var(--muted)}
-h1{font-size:40px;line-height:1.1;letter-spacing:-0.03em;margin:0 0 12px}
-.lede{color:var(--muted);margin:0 0 48px;max-width:56ch}
-.study{display:block;border:1px solid var(--line);border-radius:12px;padding:0;text-decoration:none;overflow:hidden;color:inherit;margin-bottom:16px;transition:border-color .15s}
-.study:hover{border-color:var(--accent)}
-.study h2{margin:0 0 4px;font-size:20px;letter-spacing:-0.01em}
-.study p{margin:0;color:var(--muted);font-size:14px}
-.route{display:inline-block;margin-top:10px;font:12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent)}
-footer{margin-top:64px;border-top:1px solid var(--line);padding-top:16px;font-size:13px;color:var(--muted)}
-code{font:13px ui-monospace,SFMono-Regular,Menlo,monospace}
-.study .body{padding:20px 24px}
-.thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--line);background:var(--line)}
+/* hero */
+.hero{position:relative;padding:96px 0 72px;max-width:820px}
+.hero::before{content:"";position:absolute;inset:0 -200px;background:radial-gradient(circle at 30% 20%,var(--accent-soft),transparent 60%);pointer-events:none}
+.eyebrow{font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+h1{font-size:clamp(2.5rem,6vw,4rem);line-height:1.04;letter-spacing:-0.035em;margin:0 0 20px;font-weight:650;max-width:14em}
+h1 .mark{position:relative;color:var(--accent);white-space:nowrap}
+h1 .mark::after{content:"";position:absolute;inset:-4px -8px;border:1.5px dashed var(--accent);border-radius:6px;opacity:.55;pointer-events:none}
+.lede{color:var(--muted);margin:0 0 34px;max-width:58ch;font-size:17px}
+.lede code{font:13px ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:14.5px;padding:11px 20px;border-radius:999px;border:1px solid var(--line);transition:transform .18s ease-out,box-shadow .18s ease-out,background .18s ease-out}
+.btn.primary{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(20,20,18,.4)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.btn .arr{transition:transform .18s ease-out}
+.btn:hover .arr{transform:translateX(3px)}
+.stats{display:flex;gap:0;border-top:1px solid var(--line)}
+.stat{padding:18px 28px 0 0;margin-right:28px}
+.stat b{display:block;font-size:26px;letter-spacing:-0.03em}
+.stat span{font-size:12.5px;color:var(--muted)}
+/* studies grid */
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;margin:64px 0 22px}
+.sec-head h2{margin:0;font-size:22px;letter-spacing:-0.02em}
+.sec-head span{font-size:13px;color:var(--faint)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
+.study{display:block;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);text-decoration:none;overflow:hidden;transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .2s ease-out;animation:rise .5s ease-out both;animation-delay:calc(var(--i)*45ms)}
+.study:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 18px 40px -22px rgba(20,20,18,.35)}
+.study:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.thumbwrap{position:relative;aspect-ratio:16/9;overflow:hidden;border-bottom:1px solid var(--line);background:var(--line)}
+.thumb{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease-out}
+.study:hover .thumb{transform:scale(1.035)}
+.theme{position:absolute;top:12px;left:12px;display:inline-flex;align-items:center;gap:6px;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:999px;padding:4px 11px;font:600 10.5px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.theme::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.study .body{padding:18px 20px 20px}
+.study h3{margin:0 0 5px;font-size:17.5px;letter-spacing:-0.015em}
+.study p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cardfoot{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+.route{font:11.5px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent)}
+.go{width:26px;height:26px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:13px;color:var(--muted);transition:all .18s ease-out}
+.study:hover .go{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateX(3px)}
+/* inside section */
+.inside{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin:8px 0 0}
+.inside div{border-top:1px solid var(--line);padding-top:18px}
+.inside h4{margin:0 0 6px;font-size:15px}
+.inside p{margin:0;font-size:13.5px;color:var(--muted)}
+.inside code{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent)}
+footer{margin:80px 0 48px;border-top:1px solid var(--line);padding-top:20px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--accent);text-decoration:none}
+footer a:hover{text-decoration:underline}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:760px){
+  .hero{padding:64px 0 52px}
+  .grid{grid-template-columns:1fr}
+  .inside{grid-template-columns:1fr;gap:20px}
+  .stat{padding-right:18px;margin-right:18px}
+  .stat b{font-size:21px}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header><span class="brand"><a href="./">Landing UI Studies</a></span><span class="tag">private study collection</span></header>
-<main>
-<h1>Studies</h1>
-<p class="lede">Each folder under <code>studies/</code> is a self-contained landing-page study with its own route, reference notes, and a reusable DESIGN-SKILL.md.</p>
-<a class="study" href="studies/interface-foundations/">
-<img class="thumb" src="studies/interface-foundations/showcase.jpg" alt="interface-foundations study visual preview" loading="lazy" width="1429" height="804">
+<section class="hero">
+<p class="eyebrow">A living collection</p>
+<h1>Fifteen landing-page <span class="mark">studies</span>, each a reusable design skill.</h1>
+<p class="lede">Every folder under <code>studies/</code> is a self-contained landing-page study with its own route, reference notes, and a DESIGN-SKILL.md you can lift into new work.</p>
+<div class="cta-row">
+<a class="btn primary" href="#studies">Browse the studies <span class="arr">&rarr;</span></a>
+<a class="btn ghost" href="https://github.com/DipanNama/landing-ui-studies">View on GitHub <span class="arr">&nearr;</span></a>
+</div>
+<div class="stats">
+<div class="stat"><b>15</b><span>studies live</span></div>
+<div class="stat"><b>15</b><span>design skills</span></div>
+<div class="stat"><b>100%</b><span>static, self-contained</span></div>
+</div>
+</section>
+<main id="studies">
+<div class="sec-head"><h2>Studies</h2><span>newest additions included</span></div>
+<div class="grid">
+<a class="study" style="--i:0" href="studies/interface-foundations/">
+<div class="thumbwrap"><img class="thumb" src="studies/interface-foundations/showcase.jpg" alt="Interface Foundations Lab study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Editorial · light</span></div>
 <div class="body">
-<h2>Interface Foundations Lab</h2>
+<h3>Interface Foundations Lab</h3>
 <p>Annotated-editorial landing study based on the visual system of uidesigncourse.com.</p>
-<span class="route">/studies/interface-foundations/</span>
+<div class="cardfoot"><span class="route">/studies/interface-foundations/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/adaptive-experience/">
-<img class="thumb" src="studies/adaptive-experience/showcase.jpg" alt="adaptive-experience study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:1" href="studies/adaptive-experience/">
+<div class="thumbwrap"><img class="thumb" src="studies/adaptive-experience/showcase.jpg" alt="Facet Adaptive Experience study visual preview" loading="lazy" width="1429" height="804"><span class="theme">SaaS · light</span></div>
 <div class="body">
-<h2>Facet Adaptive Experience</h2>
+<h3>Facet Adaptive Experience</h3>
 <p>Product-led personalization SaaS study based on the visual system of croct.com.</p>
-<span class="route">/studies/adaptive-experience/</span>
+<div class="cardfoot"><span class="route">/studies/adaptive-experience/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/weekend-build-lab/">
-<img class="thumb" src="studies/weekend-build-lab/showcase.jpg" alt="weekend-build-lab study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:2" href="studies/weekend-build-lab/">
+<div class="thumbwrap"><img class="thumb" src="studies/weekend-build-lab/showcase.jpg" alt="Weekend Build Lab study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Event · dark</span></div>
 <div class="body">
-<h2>Weekend Build Lab</h2>
+<h3>Weekend Build Lab</h3>
 <p>Dark event-conversion landing study based on the visual system of outskill.com.</p>
-<span class="route">/studies/weekend-build-lab/</span>
+<div class="cardfoot"><span class="route">/studies/weekend-build-lab/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/line-illustration-kit/">
-<img class="thumb" src="studies/line-illustration-kit/showcase.jpg" alt="line-illustration-kit study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:3" href="studies/line-illustration-kit/">
+<div class="thumbwrap"><img class="thumb" src="studies/line-illustration-kit/showcase.jpg" alt="Inkline Illustration Pack study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Illustration · mono</span></div>
 <div class="body">
-<h2>Inkline Illustration Pack</h2>
+<h3>Inkline Illustration Pack</h3>
 <p>Monochrome illustration-shop landing study based on the visual system of notioly.com.</p>
-<span class="route">/studies/line-illustration-kit/</span>
+<div class="cardfoot"><span class="route">/studies/line-illustration-kit/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/design-extractor/">
-<img class="thumb" src="studies/design-extractor/showcase.jpg" alt="design-extractor study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:4" href="studies/design-extractor/">
+<div class="thumbwrap"><img class="thumb" src="studies/design-extractor/showcase.jpg" alt="Spectra Design Extractor study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Tool · light</span></div>
 <div class="body">
-<h2>Spectra Design Extractor</h2>
+<h3>Spectra Design Extractor</h3>
 <p>Light tool-SaaS landing study based on the visual system of woblo.in.</p>
-<span class="route">/studies/design-extractor/</span>
+<div class="cardfoot"><span class="route">/studies/design-extractor/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/flux-engine/">
-<img class="thumb" src="studies/flux-engine/showcase.jpg" alt="flux-engine study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:5" href="studies/flux-engine/">
+<div class="thumbwrap"><img class="thumb" src="studies/flux-engine/showcase.jpg" alt="Flux Web Engine study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Dev tool · dark</span></div>
 <div class="body">
-<h2>Flux Web Engine</h2>
+<h3>Flux Web Engine</h3>
 <p>Dark framed developer-tool study based on the visual system of vite.dev.</p>
-<span class="route">/studies/flux-engine/</span>
+<div class="cardfoot"><span class="route">/studies/flux-engine/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/interactive-systems-journal/">
-<img class="thumb" src="studies/interactive-systems-journal/showcase.jpg" alt="interactive-systems-journal study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:6" href="studies/interactive-systems-journal/">
+<div class="thumbwrap"><img class="thumb" src="studies/interactive-systems-journal/showcase.jpg" alt="Open Circuit Journal study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Journal · editorial</span></div>
 <div class="body">
-<h2>Open Circuit Journal</h2>
+<h3>Open Circuit Journal</h3>
 <p>Editorial interactive-computing journal study based on the visual system of nan.fyi.</p>
-<span class="route">/studies/interactive-systems-journal/</span>
+<div class="cardfoot"><span class="route">/studies/interactive-systems-journal/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/context-composer/">
-<img class="thumb" src="studies/context-composer/showcase.jpg" alt="context-composer study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:7" href="studies/context-composer/">
+<div class="thumbwrap"><img class="thumb" src="studies/context-composer/showcase.jpg" alt="Context Composer study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Desktop · quiet</span></div>
 <div class="body">
-<h2>Context Composer</h2>
+<h3>Context Composer</h3>
 <p>Quiet screenshot-led desktop-tool study based on the visual system of promptbuilder.site.</p>
-<span class="route">/studies/context-composer/</span>
+<div class="cardfoot"><span class="route">/studies/context-composer/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/vector-motion-lab/">
-<img class="thumb" src="studies/vector-motion-lab/showcase.jpg" alt="vector-motion-lab study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:8" href="studies/vector-motion-lab/">
+<div class="thumbwrap"><img class="thumb" src="studies/vector-motion-lab/showcase.jpg" alt="Vector Motion Workshop study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Course · editorial</span></div>
 <div class="body">
-<h2>Vector Motion Workshop</h2>
+<h3>Vector Motion Workshop</h3>
 <p>Editorial interactive-course landing study based on the visual system of svg.guide.</p>
-<span class="route">/studies/vector-motion-lab/</span>
+<div class="cardfoot"><span class="route">/studies/vector-motion-lab/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/relay/">
-<img class="thumb" src="studies/relay/showcase.jpg" alt="relay study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:9" href="studies/relay/">
+<div class="thumbwrap"><img class="thumb" src="studies/relay/showcase.jpg" alt="Relay Developer Mail study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Infra · dark</span></div>
 <div class="body">
-<h2>Relay Developer Mail</h2>
+<h3>Relay Developer Mail</h3>
 <p>Dark developer-infrastructure landing study based on the visual system of resend.com.</p>
-<span class="route">/studies/relay/</span>
+<div class="cardfoot"><span class="route">/studies/relay/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/command-center/">
-<img class="thumb" src="studies/command-center/showcase.jpg" alt="command-center study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:10" href="studies/command-center/">
+<div class="thumbwrap"><img class="thumb" src="studies/command-center/showcase.jpg" alt="Keystroke Command Center study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Productivity · dark</span></div>
 <div class="body">
-<h2>Keystroke Command Center</h2>
+<h3>Keystroke Command Center</h3>
 <p>Cinematic keyboard-first productivity study based on the visual system of raycast.com.</p>
-<span class="route">/studies/command-center/</span>
+<div class="cardfoot"><span class="route">/studies/command-center/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/northstar-product-os/">
-<img class="thumb" src="studies/northstar-product-os/showcase.jpg" alt="northstar-product-os study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:11" href="studies/northstar-product-os/">
+<div class="thumbwrap"><img class="thumb" src="studies/northstar-product-os/showcase.jpg" alt="Northstar Product OS study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Product OS · dark</span></div>
 <div class="body">
-<h2>Northstar Product OS</h2>
+<h3>Northstar Product OS</h3>
 <p>Dark product-development system study based on the visual system of linear.app.</p>
-<span class="route">/studies/northstar-product-os/</span>
+<div class="cardfoot"><span class="route">/studies/northstar-product-os/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/publish-flow/">
-<img class="thumb" src="studies/publish-flow/showcase.jpg" alt="publish-flow study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:12" href="studies/publish-flow/">
+<div class="thumbwrap"><img class="thumb" src="studies/publish-flow/showcase.jpg" alt="Draftly Publishing Workspace study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Publishing · light</span></div>
 <div class="body">
-<h2>Draftly Publishing Workspace</h2>
+<h3>Draftly Publishing Workspace</h3>
 <p>Product-led social publishing study based on the visual system of typefully.com.</p>
-<span class="route">/studies/publish-flow/</span>
+<div class="cardfoot"><span class="route">/studies/publish-flow/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/selene-docs/">
-<img class="thumb" src="studies/selene-docs/showcase.jpg" alt="selene-docs study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:13" href="studies/selene-docs/">
+<div class="thumbwrap"><img class="thumb" src="studies/selene-docs/showcase.jpg" alt="Selene Docs Toolkit study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Docs · midnight</span></div>
 <div class="body">
-<h2>Selene Docs Toolkit</h2>
+<h3>Selene Docs Toolkit</h3>
 <p>Midnight halftone developer-docs landing study based on the visual system of fumadocs.dev.</p>
-<span class="route">/studies/selene-docs/</span>
+<div class="cardfoot"><span class="route">/studies/selene-docs/</span><span class="go">&rarr;</span></div>
 </div>
 </a>
-<a class="study" href="studies/component-atlas/">
-<img class="thumb" src="studies/component-atlas/showcase.jpg" alt="component-atlas study visual preview" loading="lazy" width="1429" height="804">
+<a class="study" style="--i:14" href="studies/component-atlas/">
+<div class="thumbwrap"><img class="thumb" src="studies/component-atlas/showcase.jpg" alt="Atlas Component Library study visual preview" loading="lazy" width="1429" height="804"><span class="theme">Components · light</span></div>
 <div class="body">
-<h2>Atlas Component Library</h2>
+<h3>Atlas Component Library</h3>
 <p>Component-library storefront landing study based on the visual system of untitledui.com/react.</p>
-<span class="route">/studies/component-atlas/</span>
+<div class="cardfoot"><span class="route">/studies/component-atlas/</span><span class="go">&rarr;</span></div>
 </div>
-</a>
+</a></div>
+<div class="sec-head"><h2>Inside every study</h2><span>same shape, every time</span></div>
+<div class="inside">
+<div><h4>Its own route</h4><p>Each study ships as a single static page at <code>/studies/&lt;name&gt;/</code> - open it, fork it, measure it.</p></div>
+<div><h4>Reference notes</h4><p>What the source system does well, decoded into spacing, type and motion decisions worth reusing.</p></div>
+<div><h4>Design skill</h4><p>A <code>DESIGN-SKILL.md</code> distilling the study into tokens, components and rules for new pages.</p></div>
+</div>
 </main>
-<footer>New studies are added under <code>/studies/&lt;name&gt;/</code> and keep their own route.</footer>
+<footer>
+<span>New studies are added under <code style="font:12px ui-monospace,Menlo,monospace">/studies/&lt;name&gt;/</code> and keep their own route.</span>
+<span><a href="https://github.com/DipanNama/landing-ui-studies/releases">Releases</a> &middot; <a href="https://github.com/DipanNama/landing-ui-studies">Source</a></span>
+</footer>
 </div>
 </body>
 </html>
-
