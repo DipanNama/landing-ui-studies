@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Atlas UI React — Open React Component Library</title>
-<meta name="description" content="An original landing-page study recreating the composition of a component-library storefront. All copy, marks, and previews are fictional and locally authored.">
+<meta content="An original landing-page study recreating the composition of a component-library storefront. All copy, marks, and previews are fictional and locally authored." name="description"/>
 <style>
 :root{
   --bg:#ffffff; --fg:#101828; --muted:#667085; --faint:#98a2b3;
@@ -275,441 +276,417 @@ img.av,img.avatar-mini{display:inline-block;object-fit:cover}
 .showcase img{display:block;width:100%;max-width:1120px;height:auto;margin:0 auto;border-radius:18px;border:1px solid rgba(108,76,246,.18);box-shadow:0 30px 60px -28px rgba(108,76,246,.30)}
 @media (max-width:640px){.showcase{padding:8px 16px 48px}.showcase img{border-radius:12px}}
 </style>
-</head>
+<style>.settings{width:82%;background:white;border:1px solid #e5e7eb;border-radius:8px;padding:10px;text-align:left;box-shadow:0 8px 20px #10182812}.settings nav{display:flex;justify-content:space-between;font-size:8px}.settings nav span{color:#16815d}.settings label{display:block;font-size:6px;color:#667085;margin-top:5px}.settings input,.settings select{display:block;width:100%;height:21px;border:1px solid #d0d5dd;border-radius:4px;margin-top:2px;font-size:7px;background:white}.settings button{margin-top:6px;border:0;background:#6c4cf6;color:white;border-radius:4px;padding:5px;font-size:6px}</style></head>
 <body>
-
 <header class="site">
-  <div class="wrap nav">
-    <a class="brand" href="#"><span class="mark"></span>Atlas UI</a>
-    <nav class="navlinks">
-      <a href="#components">Products</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#components">Components</a>
-      <a href="#">Journal</a>
-      <a href="#faq">FAQs</a>
-      <a href="#">Docs</a>
-    </nav>
-    <div class="navcta">
-      <a class="btn btn-ghost" href="#">Sign in</a>
-      <a class="btn btn-primary" href="#pricing">Get started</a>
-    </div>
-    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</header><figure class="showcase"><img src="./showcase.jpg" alt="Atlas UI component library grid showing buttons, input fields, toggles, badges and cards" width="1429" height="804" loading="lazy"></figure>
-
+<div class="wrap nav">
+<a class="brand" href="#"><span class="mark"></span>Atlas UI</a>
+<nav class="navlinks">
+<a href="#components">Products</a>
+<a href="#pricing">Pricing</a>
+<a href="#components">Components</a>
+<a href="#">Journal</a>
+<a href="#faq">FAQs</a>
+<a href="#">Docs</a>
+</nav>
+<div class="navcta">
+<a class="btn btn-ghost" href="#">Sign in</a>
+<a class="btn btn-primary" href="#pricing">Get started</a>
+</div>
+<button aria-label="Menu" class="hamburger"><span></span><span></span><span></span></button>
+</div>
+</header><figure class="showcase"><img alt="Atlas UI component library grid showing buttons, input fields, toggles, badges and cards" height="804" loading="lazy" src="./showcase.jpg" width="1429"/></figure>
 <!-- hero -->
 <div class="hero">
-  <div class="fade">
-    <div class="wrap">
-      <div class="atom">
-        <svg viewBox="0 0 34 34" fill="none" stroke="#8f79ff" stroke-width="2">
-          <circle cx="17" cy="17" r="3.2" fill="#8f79ff" stroke="none"/>
-          <ellipse cx="17" cy="17" rx="13" ry="5.4"/>
-          <ellipse cx="17" cy="17" rx="13" ry="5.4" transform="rotate(60 17 17)"/>
-          <ellipse cx="17" cy="17" rx="13" ry="5.4" transform="rotate(120 17 17)"/>
-        </svg>
-      </div>
-      <div class="eyebrow">Atlas UI React</div>
-      <h1>The open React component library for fast shipping</h1>
-      <p class="sub">Atlas UI React is a growing collection of open, accessible React components styled with utility classes. Copy what you need, paste it in, and keep building.</p>
-      <div class="cta-row">
-        <a class="btn btn-ghost" href="#components">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5.5 8 2l6 3.5v5L8 14l-6-3.5z"/><path d="M2 5.5 8 9l6-3.5M8 9v5"/></svg>
-          Components</a>
-        <a class="btn btn-ghost" href="#">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2.5h7L13 5v8.5H3z"/><path d="M10 2.5V5h3"/></svg>
-          Documentation</a>
-        <a class="btn btn-primary" href="#pricing">Get started</a>
-      </div>
-    </div>
-    <div class="hero-stage">
-      <div class="docwin">
-        <div class="docwin bar">
-          <img class="avatar-mini" src="assets/av-user.svg" alt=""><b style="color:var(--fg)">Atlas UI</b>
-          <span class="grow"></span>
-          <span>⌕</span><span>✕</span><span>♡ 1,204</span>
-          <span style="border:1px solid var(--line);border-radius:6px;padding:2px 8px">Account ⌄</span>
-        </div>
-        <div class="docgrid">
-          <div class="docside">
-            <div class="grp">Documentation</div>
-            <div class="it">Introduction</div>
-            <div class="it on">Installation</div>
-            <div class="it">Theming</div>
-            <div class="it">Dark mode</div>
-            <div class="grp">Resources</div>
-            <div class="it">CLI</div>
-            <div class="it">Icons</div>
-          </div>
-          <div class="docmain">
-            <h3>Installation</h3>
-            <p>This guide walks through adding Atlas UI React to a new or existing project in a few minutes.</p>
-            <div class="chipline"><span class="chip"><span class="dot"></span>MIT license</span><span class="chip">TypeScript ready</span></div>
-            <div class="examplebox">
-              <div class="lbl">Frameworks</div>
-              <div class="pv-line w80"></div><div class="pv-line w60"></div><div class="pv-line w40"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hero-doc2">
-    <div class="nametag">Mira Chen</div>
-    <div class="docwin" style="margin:0 24px">
-      <div class="docwin bar">
-        <img class="avatar-mini" src="assets/av-user.svg" alt=""><b style="color:var(--fg)">Atlas UI</b>
-        <span class="crumb" style="margin-left:14px">Base components &rsaquo; Components &rsaquo; Buttons</span>
-        <span class="grow"></span>
-        <span style="border:1px solid var(--line);border-radius:6px;padding:2px 8px">Preview</span>
-        <span style="border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted)">Code</span>
-      </div>
-      <div class="docmain" style="padding:22px 28px 34px">
-        <h3 style="font-size:19px">Button components <span style="font-size:10.5px;color:var(--brand);border:1px solid #d9d0ff;border-radius:999px;padding:2px 8px;vertical-align:middle">FREE</span></h3>
-        <p>Open button components for modern apps, with keyboard support and utility-class styling.</p>
-        <div class="examplebox" style="margin-top:14px">
-          <div class="lbl">Button example</div>
-          <div class="btnrow">
-            <span class="btn btn-primary" style="padding:8px 14px;font-size:13px">Publish now</span>
-            <span class="btn btn-ghost" style="padding:8px 14px;font-size:13px">Save draft</span>
-            <span class="btn btn-ghost" style="padding:8px 14px;font-size:13px;border-style:dashed">Preview</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="fade">
+<div class="wrap">
+<div class="atom">
+<svg fill="none" stroke="#8f79ff" stroke-width="2" viewbox="0 0 34 34">
+<circle cx="17" cy="17" fill="#8f79ff" r="3.2" stroke="none"></circle>
+<ellipse cx="17" cy="17" rx="13" ry="5.4"></ellipse>
+<ellipse cx="17" cy="17" rx="13" ry="5.4" transform="rotate(60 17 17)"></ellipse>
+<ellipse cx="17" cy="17" rx="13" ry="5.4" transform="rotate(120 17 17)"></ellipse>
+</svg>
 </div>
-
+<div class="eyebrow">Atlas UI React</div>
+<h1>The open React component library for fast shipping</h1>
+<p class="sub">Atlas UI React is a growing collection of open, accessible React components styled with utility classes. Copy what you need, paste it in, and keep building.</p>
+<div class="cta-row">
+<a class="btn btn-ghost" href="#components">
+<svg fill="none" height="16" stroke="currentColor" stroke-width="1.5" viewbox="0 0 16 16" width="16"><path d="M2 5.5 8 2l6 3.5v5L8 14l-6-3.5z"></path><path d="M2 5.5 8 9l6-3.5M8 9v5"></path></svg>
+          Components</a>
+<a class="btn btn-ghost" href="#">
+<svg fill="none" height="16" stroke="currentColor" stroke-width="1.5" viewbox="0 0 16 16" width="16"><path d="M3 2.5h7L13 5v8.5H3z"></path><path d="M10 2.5V5h3"></path></svg>
+          Documentation</a>
+<a class="btn btn-primary" href="#pricing">Get started</a>
+</div>
+</div>
+<div class="hero-stage">
+<div class="docwin">
+<div class="docwin bar">
+<img alt="" class="avatar-mini" src="assets/av-user.svg"/><b style="color:var(--fg)">Atlas UI</b>
+<span class="grow"></span>
+<span>⌕</span><span>✕</span><span>♡ 1,204</span>
+<span style="border:1px solid var(--line);border-radius:6px;padding:2px 8px">Account ⌄</span>
+</div>
+<div class="docgrid">
+<div class="docside">
+<div class="grp">Documentation</div>
+<div class="it">Introduction</div>
+<div class="it on">Installation</div>
+<div class="it">Theming</div>
+<div class="it">Dark mode</div>
+<div class="grp">Resources</div>
+<div class="it">CLI</div>
+<div class="it">Icons</div>
+</div>
+<div class="docmain">
+<h3>Installation</h3>
+<p>This guide walks through adding Atlas UI React to a new or existing project in a few minutes.</p>
+<div class="chipline"><span class="chip"><span class="dot"></span>MIT license</span><span class="chip">TypeScript ready</span></div>
+<div class="examplebox">
+<div class="lbl">Frameworks</div>
+<div class="pv-line w80"></div><div class="pv-line w60"></div><div class="pv-line w40"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hero-doc2">
+<div class="nametag">Mira Chen</div>
+<div class="docwin" style="margin:0 24px">
+<div class="docwin bar">
+<img alt="" class="avatar-mini" src="assets/av-user.svg"/><b style="color:var(--fg)">Atlas UI</b>
+<span class="crumb" style="margin-left:14px">Base components › Components › Buttons</span>
+<span class="grow"></span>
+<span style="border:1px solid var(--line);border-radius:6px;padding:2px 8px">Preview</span>
+<span style="border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted)">Code</span>
+</div>
+<div class="docmain" style="padding:22px 28px 34px">
+<h3 style="font-size:19px">Button components <span style="font-size:10.5px;color:var(--brand);border:1px solid #d9d0ff;border-radius:999px;padding:2px 8px;vertical-align:middle">FREE</span></h3>
+<p>Open button components for modern apps, with keyboard support and utility-class styling.</p>
+<div class="examplebox" style="margin-top:14px">
+<div class="lbl">Button example</div>
+<div class="btnrow">
+<span class="btn btn-primary" style="padding:8px 14px;font-size:13px">Publish now</span>
+<span class="btn btn-ghost" style="padding:8px 14px;font-size:13px">Save draft</span>
+<span class="btn btn-ghost" style="padding:8px 14px;font-size:13px;border-style:dashed">Preview</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <!-- component grid -->
 <section id="components">
-  <div class="wrap">
-    <div class="eyebrow">React components</div>
-    <h2 class="h2">React UI components and sections</h2>
-    <p class="sub">Atlas UI React is written in TypeScript, built on accessible primitives, and styled with utility classes. It is a starting point for projects of any size.</p>
-    <div class="builtline">Built with
-      <b><svg class="logomark" viewBox="0 0 17 17"><circle cx="8.5" cy="8.5" r="8.5" fill="#e0f2fe"/><circle cx="8.5" cy="8.5" r="2" fill="#0ea5e9"/><ellipse cx="8.5" cy="8.5" rx="7" ry="2.8" fill="none" stroke="#0ea5e9"/></svg>
+<div class="wrap">
+<div class="eyebrow">React components</div>
+<h2 class="h2">React UI components and sections</h2>
+<p class="sub">Atlas UI React is written in TypeScript, built on accessible primitives, and styled with utility classes. It is a starting point for projects of any size.</p>
+<div class="builtline">Built with
+      <b><svg class="logomark" viewbox="0 0 17 17"><circle cx="8.5" cy="8.5" fill="#e0f2fe" r="8.5"></circle><circle cx="8.5" cy="8.5" fill="#0ea5e9" r="2"></circle><ellipse cx="8.5" cy="8.5" fill="none" rx="7" ry="2.8" stroke="#0ea5e9"></ellipse></svg>
       Aria Primitives</b> and styled with
-      <b><svg class="logomark" viewBox="0 0 17 17"><rect width="17" height="17" rx="4" fill="#0f172a"/><path d="M4 9.5c1-2.5 2.5-3.5 4.5-3.5 2.8 0 3.2 2 4.6 2.4.9.2 1.9-.3 2.4-1.4-1 2.5-2.5 3.5-4.5 3.5-2.8 0-3.2-2-4.6-2.4-.9-.2-1.9.3-2.4 1.4z" fill="#38bdf8"/></svg>
+      <b><svg class="logomark" viewbox="0 0 17 17"><rect fill="#0f172a" height="17" rx="4" width="17"></rect><path d="M4 9.5c1-2.5 2.5-3.5 4.5-3.5 2.8 0 3.2 2 4.6 2.4.9.2 1.9-.3 2.4-1.4-1 2.5-2.5 3.5-4.5 3.5-2.8 0-3.2-2-4.6-2.4-.9-.2-1.9.3-2.4 1.4z" fill="#38bdf8"></path></svg>
       Utility CSS</b>
-    </div>
-    <div class="grid4">
-      <div class="card"><div class="preview"><div class="pv-avatars">
-        <img class="av" src="assets/av-ada.svg" alt="" style="background:linear-gradient(135deg,#f9c5d1,#e04e7c)">
-        <img class="av" src="assets/av-ben.svg" alt="" style="background:linear-gradient(135deg,#c7b8ff,#6c4cf6)">
-        <img class="av" src="assets/av-cleo.svg" alt="" style="background:linear-gradient(135deg,#a6f4c5,#12b76a)">
-        <span class="plus">+</span></div></div>
-        <div class="meta"><b>Avatars</b><span>240 variants + 90 styles</span></div></div>
-      <div class="card"><div class="preview"><div class="pv-win">
-        <div class="tb"><i></i><i></i><i></i></div>
-        <div class="pv-line w80"></div><div class="pv-line w60"></div><div class="pv-line w80"></div><div class="pv-line w40"></div>
-        <div style="margin-top:10px"><span class="pv-toggle"></span>&nbsp;&nbsp;<span class="pv-toggle off"></span></div>
-      </div></div>
-        <div class="meta"><b>Footers</b><span>4 components + 160 variants</span></div></div>
-      <div class="card"><div class="preview"><div class="pv-cal">
-        <div class="mh">March 2027</div>
-        <div class="days"><i></i><i></i><i class="soft"></i><i></i><i></i><i></i><i></i><i></i><i class="hot"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="soft"></i><i></i><i></i><i></i></div>
-      </div></div>
-        <div class="meta"><b>Calendars</b><span>10 components + 74 variants</span></div></div>
-      <div class="card"><div class="preview"><svg class="pv-chart" viewBox="0 0 220 110">
-        <rect width="220" height="110" rx="8" fill="#fff" stroke="#eaecf0"/>
-        <path d="M14 84 C 50 70, 70 74, 96 52 S 150 40, 172 30 S 200 22, 206 18" fill="none" stroke="#6c4cf6" stroke-width="2.5"/>
-        <path d="M14 90 C 50 84, 76 80, 100 66 S 150 58, 176 44 S 200 38, 206 34" fill="none" stroke="#b39dfb" stroke-width="1.6" stroke-dasharray="4 4"/>
-        <circle cx="172" cy="30" r="4" fill="#fff" stroke="#6c4cf6" stroke-width="2.5"/>
-      </svg></div>
-        <div class="meta"><b>Line &amp; bar charts</b><span>7 components + 98 variants</span></div></div>
-      <div class="card"><div class="preview"><div class="pv-cal">
-        <div class="mh">April 2027 &nbsp;&nbsp;·&nbsp;&nbsp; May 2027</div>
-        <div class="days"><i></i><i class="hot"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="soft"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="hot"></i><i></i><i></i></div>
-      </div></div>
-        <div class="meta"><b>Date pickers</b><span>5 components + 61 variants</span></div></div>
-      <div class="card"><div class="preview"><div class="pv-spectrum"></div></div>
-        <div class="meta"><b>Color pickers</b><span>6 components + 24 variants</span></div></div>
-      <div class="card"><div class="preview"><div class="pv-menu">
-        <div class="search">⌕&nbsp; Search</div>
-        <div class="row"><i></i>Rhea Kapoor<span style="margin-left:auto;color:var(--faint)">@rhea</span></div>
-        <div class="row on"><i style="background:linear-gradient(135deg,#a6f4c5,#12b76a)"></i>Dev Malhotra<span style="margin-left:auto;color:var(--faint)">@dev</span></div>
-        <div class="row"><i style="background:linear-gradient(135deg,#f9c5d1,#e04e7c)"></i>Ana Ruiz<span style="margin-left:auto;color:var(--faint)">@ana</span></div>
-      </div></div>
-        <div class="meta"><b>Command menus (⌘K)</b><span>4 components + 52 variants</span></div></div>
-      <div class="card"><div class="preview"><div class="btnrow" style="justify-content:center">
-        <span class="btn btn-ghost" style="font-size:12.5px;padding:8px 13px">Stage for publish</span>
-        <span class="btn btn-primary" style="font-size:12.5px;padding:8px 13px">✓ Publish now</span>
-      </div></div>
-        <div class="meta"><b>Buttons</b><span>5 components + 820 variants</span></div></div>
-      <div class="card"><div class="preview">
-        <div class="pv-win" style="opacity:.5"><div class="tb"><i></i><i></i><i></i></div><div class="pv-line w60"></div><div class="pv-line w80"></div></div>
-        <div class="pv-modal"><div class="box"><b>✓ Post published</b>Your changes are live.
-          <div class="act"><i>Done</i></div></div></div>
-      </div>
-        <div class="meta"><b>Modals</b><span>2 components + 64 variants</span></div></div>
-      <div class="card"><div class="preview"><div>
-        <span class="pv-badge g">● Active</span>&nbsp;&nbsp;<span class="pv-badge n">● Archived</span>
-      </div></div>
-        <div class="meta"><b>Badges</b><span>3 components + 120 variants</span></div></div>
-      <div class="card"><div class="preview"><div class="pv-slider">
-        <div class="track"></div>
-        <div class="pct"><span>0%</span><span>75%</span></div>
-      </div></div>
-        <div class="meta"><b>Sliders</b><span>2 components + 33 variants</span></div></div>
-      <div class="card"><div class="preview"><div class="pv-devices">
-        <div class="d1"><div class="pv-line w80" style="margin-top:0"></div><div class="pv-line w60"></div><span class="btn btn-primary" style="font-size:9px;padding:3px 8px">Start</span></div>
-        <div class="d2"><div class="pv-line" style="margin-top:0"></div><div class="pv-line w60"></div><div class="pv-line w80"></div></div>
-      </div></div>
-        <div class="meta"><b>Landing page examples</b><span>48 page examples</span></div></div>
-    </div>
-    <div class="centerbtn"><a class="btn btn-ghost" href="#">View all components</a></div>
-  </div>
+</div>
+<div class="grid4">
+<div class="card"><div class="preview"><div class="pv-avatars">
+<img alt="" class="av" src="assets/av-ada.svg" style="background:linear-gradient(135deg,#f9c5d1,#e04e7c)"/>
+<img alt="" class="av" src="assets/av-ben.svg" style="background:linear-gradient(135deg,#c7b8ff,#6c4cf6)"/>
+<img alt="" class="av" src="assets/av-cleo.svg" style="background:linear-gradient(135deg,#a6f4c5,#12b76a)"/>
+<span class="plus">+</span></div></div>
+<div class="meta"><b>Avatars</b><span>240 variants + 90 styles</span></div></div>
+<div class="card"><div class="preview"><div class="settings"><nav><b>Workspace settings</b><span>Saved</span></nav><label>Name<input readonly="" value="Atlas Studio"/></label><label>Visibility<select><option>Team only</option></select></label><button>Save changes</button></div></div>
+<div class="meta"><b>Footers</b><span>4 components + 160 variants</span></div></div>
+<div class="card"><div class="preview"><div class="pv-cal">
+<div class="mh">March 2027</div>
+<div class="days"><i></i><i></i><i class="soft"></i><i></i><i></i><i></i><i></i><i></i><i class="hot"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="soft"></i><i></i><i></i><i></i></div>
+</div></div>
+<div class="meta"><b>Calendars</b><span>10 components + 74 variants</span></div></div>
+<div class="card"><div class="preview"><svg class="pv-chart" viewbox="0 0 220 110">
+<rect fill="#fff" height="110" rx="8" stroke="#eaecf0" width="220"></rect>
+<path d="M14 84 C 50 70, 70 74, 96 52 S 150 40, 172 30 S 200 22, 206 18" fill="none" stroke="#6c4cf6" stroke-width="2.5"></path>
+<path d="M14 90 C 50 84, 76 80, 100 66 S 150 58, 176 44 S 200 38, 206 34" fill="none" stroke="#b39dfb" stroke-dasharray="4 4" stroke-width="1.6"></path>
+<circle cx="172" cy="30" fill="#fff" r="4" stroke="#6c4cf6" stroke-width="2.5"></circle>
+</svg></div>
+<div class="meta"><b>Line &amp; bar charts</b><span>7 components + 98 variants</span></div></div>
+<div class="card"><div class="preview"><div class="pv-cal">
+<div class="mh">April 2027   ·   May 2027</div>
+<div class="days"><i></i><i class="hot"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="soft"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="hot"></i><i></i><i></i></div>
+</div></div>
+<div class="meta"><b>Date pickers</b><span>5 components + 61 variants</span></div></div>
+<div class="card"><div class="preview"><div class="pv-spectrum"></div></div>
+<div class="meta"><b>Color pickers</b><span>6 components + 24 variants</span></div></div>
+<div class="card"><div class="preview"><div class="pv-menu">
+<div class="search">⌕  Search</div>
+<div class="row"><i></i>Rhea Kapoor<span style="margin-left:auto;color:var(--faint)">@rhea</span></div>
+<div class="row on"><i style="background:linear-gradient(135deg,#a6f4c5,#12b76a)"></i>Dev Malhotra<span style="margin-left:auto;color:var(--faint)">@dev</span></div>
+<div class="row"><i style="background:linear-gradient(135deg,#f9c5d1,#e04e7c)"></i>Ana Ruiz<span style="margin-left:auto;color:var(--faint)">@ana</span></div>
+</div></div>
+<div class="meta"><b>Command menus (⌘K)</b><span>4 components + 52 variants</span></div></div>
+<div class="card"><div class="preview"><div class="btnrow" style="justify-content:center">
+<span class="btn btn-ghost" style="font-size:12.5px;padding:8px 13px">Stage for publish</span>
+<span class="btn btn-primary" style="font-size:12.5px;padding:8px 13px">✓ Publish now</span>
+</div></div>
+<div class="meta"><b>Buttons</b><span>5 components + 820 variants</span></div></div>
+<div class="card"><div class="preview"><div class="settings"><nav><b>Workspace settings</b><span>Saved</span></nav><label>Name<input readonly="" value="Atlas Studio"/></label><label>Visibility<select><option>Team only</option></select></label><button>Save changes</button></div></div>
+<div class="meta"><b>Modals</b><span>2 components + 64 variants</span></div></div>
+<div class="card"><div class="preview"><div>
+<span class="pv-badge g">● Active</span>  <span class="pv-badge n">● Archived</span>
+</div></div>
+<div class="meta"><b>Badges</b><span>3 components + 120 variants</span></div></div>
+<div class="card"><div class="preview"><div class="pv-slider">
+<div class="track"></div>
+<div class="pct"><span>0%</span><span>75%</span></div>
+</div></div>
+<div class="meta"><b>Sliders</b><span>2 components + 33 variants</span></div></div>
+<div class="card"><div class="preview"><div class="settings"><nav><b>Workspace settings</b><span>Saved</span></nav><label>Name<input readonly="" value="Atlas Studio"/></label><label>Visibility<select><option>Team only</option></select></label><button>Save changes</button></div></div>
+<div class="meta"><b>Landing page examples</b><span>48 page examples</span></div></div>
+</div>
+<div class="centerbtn"><a class="btn btn-ghost" href="#">View all components</a></div>
+</div>
 </section>
-
 <!-- how it works / video -->
 <section style="padding-top:0">
-  <div class="wrap">
-    <div class="bigpanel">
-      <div class="eyebrow">How it works</div>
-      <h2 class="h2">Just copy, paste, and build</h2>
-      <p class="sub">A short walkthrough of the library, the theming tokens, and the command-line workflow.</p>
-      <div class="video"><div class="scan"></div><div class="play" role="button" aria-label="Play video"></div></div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="bigpanel">
+<div class="eyebrow">How it works</div>
+<h2 class="h2">Just copy, paste, and build</h2>
+<p class="sub">A short walkthrough of the library, the theming tokens, and the command-line workflow.</p>
+<div class="video"><div class="scan"></div><div aria-label="Play video" class="play" role="button"></div></div>
+</div>
+</div>
 </section>
-
 <!-- build fast -->
 <section style="padding-top:0">
-  <div class="wrap">
-    <div class="eyebrow">The open React library</div>
-    <h2 class="h2">Build fast. Build consistently.</h2>
-    <p class="sub">Skip weeks of design and wiring with production-ready components. Atlas UI React carries everything needed to ship a first version quickly.</p>
-    <div class="featuregrid">
-      <div class="feature">
-        <div class="tile"><svg width="22" height="22" viewBox="0 0 17 17"><rect width="17" height="17" rx="4" fill="#6c4cf6"/><path d="M4 9.5c1-2.5 2.5-3.5 4.5-3.5 2.8 0 3.2 2 4.6 2.4.9.2 1.9-.3 2.4-1.4-1 2.5-2.5 3.5-4.5 3.5-2.8 0-3.2-2-4.6-2.4-.9-.2-1.9.3-2.4 1.4z" fill="#fff"/></svg></div>
-        <b>Styled with utility CSS</b>
-        <p>Copy components with plain utility classes already applied. Compose responsive layouts without leaving your markup.</p>
-        <a class="go" href="#">Browse components &rsaquo;</a>
-      </div>
-      <div class="feature">
-        <div class="tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6c4cf6" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg></div>
-        <b>Accessible by default</b>
-        <p>Built on audited primitives with ARIA patterns, keyboard navigation, and screen-reader support out of the box.</p>
-        <a class="go" href="#">Read the guidelines &rsaquo;</a>
-      </div>
-      <div class="feature">
-        <div class="tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6c4cf6" stroke-width="2"><path d="M12 3l2.2 5.6L20 11l-5.8 2.4L12 19l-2.2-5.6L4 11l5.8-2.4z"/></svg></div>
-        <b>AI-ready starter kits</b>
-        <p>Prompt-first starter kits for the tools you already use. Describe the screen, then refine real code instead of mockups.</p>
-        <a class="go" href="#">Try a kit &rsaquo;</a>
-      </div>
-      <div class="feature">
-        <div class="tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6c4cf6" stroke-width="2"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></div>
-        <b>Modern performance, no lock-in</b>
-        <p>You own the code. Tree-shakeable packages, no runtime theme engine, and updates you can read diff by diff.</p>
-        <a class="go" href="#">See the roadmap &rsaquo;</a>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="eyebrow">The open React library</div>
+<h2 class="h2">Build fast. Build consistently.</h2>
+<p class="sub">Skip weeks of design and wiring with production-ready components. Atlas UI React carries everything needed to ship a first version quickly.</p>
+<div class="featuregrid">
+<div class="feature">
+<div class="tile"><svg height="22" viewbox="0 0 17 17" width="22"><rect fill="#6c4cf6" height="17" rx="4" width="17"></rect><path d="M4 9.5c1-2.5 2.5-3.5 4.5-3.5 2.8 0 3.2 2 4.6 2.4.9.2 1.9-.3 2.4-1.4-1 2.5-2.5 3.5-4.5 3.5-2.8 0-3.2-2-4.6-2.4-.9-.2-1.9.3-2.4 1.4z" fill="#fff"></path></svg></div>
+<b>Styled with utility CSS</b>
+<p>Copy components with plain utility classes already applied. Compose responsive layouts without leaving your markup.</p>
+<a class="go" href="#">Browse components ›</a>
+</div>
+<div class="feature">
+<div class="tile"><svg fill="none" height="22" stroke="#6c4cf6" stroke-width="2" viewbox="0 0 24 24" width="22"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg></div>
+<b>Accessible by default</b>
+<p>Built on audited primitives with ARIA patterns, keyboard navigation, and screen-reader support out of the box.</p>
+<a class="go" href="#">Read the guidelines ›</a>
+</div>
+<div class="feature">
+<div class="tile"><svg fill="none" height="22" stroke="#6c4cf6" stroke-width="2" viewbox="0 0 24 24" width="22"><path d="M12 3l2.2 5.6L20 11l-5.8 2.4L12 19l-2.2-5.6L4 11l5.8-2.4z"></path></svg></div>
+<b>AI-ready starter kits</b>
+<p>Prompt-first starter kits for the tools you already use. Describe the screen, then refine real code instead of mockups.</p>
+<a class="go" href="#">Try a kit ›</a>
+</div>
+<div class="feature">
+<div class="tile"><svg fill="none" height="22" stroke="#6c4cf6" stroke-width="2" viewbox="0 0 24 24" width="22"><path d="M13 2 4 14h6l-1 8 9-12h-6z"></path></svg></div>
+<b>Modern performance, no lock-in</b>
+<p>You own the code. Tree-shakeable packages, no runtime theme engine, and updates you can read diff by diff.</p>
+<a class="go" href="#">See the roadmap ›</a>
+</div>
+</div>
+</div>
 </section>
-
 <!-- built with -->
 <section style="padding-top:0">
-  <div class="wrap">
-    <div class="divider">Atlas UI React is built with</div>
-    <div class="stack4">
-      <div class="stackcard"><div class="lg" style="background:#0ea5e9">R</div><b>React</b><span>v19.x</span></div>
-      <div class="stackcard"><div class="lg" style="background:#0f172a">TW</div><b>Utility CSS</b><span>v4.x</span></div>
-      <div class="stackcard"><div class="lg" style="background:#2f6fed">TS</div><b>TypeScript</b><span>v5.x</span></div>
-      <div class="stackcard"><div class="lg" style="background:#e04e7c">AR</div><b>Aria Primitives</b><span>Audited patterns</span></div>
-    </div>
-    <div class="cta-row" style="margin-top:44px">
-      <a class="btn btn-ghost" href="#components">Components</a>
-      <a class="btn btn-ghost" href="#">Documentation</a>
-      <a class="btn btn-primary" href="#pricing">Get started</a>
-    </div>
-  </div>
+<div class="wrap">
+<div class="divider">Atlas UI React is built with</div>
+<div class="stack4">
+<div class="stackcard"><div class="lg" style="background:#0ea5e9">R</div><b>React</b><span>v19.x</span></div>
+<div class="stackcard"><div class="lg" style="background:#0f172a">TW</div><b>Utility CSS</b><span>v4.x</span></div>
+<div class="stackcard"><div class="lg" style="background:#2f6fed">TS</div><b>TypeScript</b><span>v5.x</span></div>
+<div class="stackcard"><div class="lg" style="background:#e04e7c">AR</div><b>Aria Primitives</b><span>Audited patterns</span></div>
+</div>
+<div class="cta-row" style="margin-top:44px">
+<a class="btn btn-ghost" href="#components">Components</a>
+<a class="btn btn-ghost" href="#">Documentation</a>
+<a class="btn btn-primary" href="#pricing">Get started</a>
+</div>
+</div>
 </section>
-
 <!-- CLI -->
 <section>
-  <div class="wrap">
-    <div class="eyebrow">Installation</div>
-    <h2 class="h2">A small CLI and honest starter kits</h2>
-    <p class="sub">Add components with a single command, or launch from a pre-configured starter kit made for real apps rather than demos.</p>
-    <div class="cli-grid">
-      <div class="cli-left">
-        <b>Get started in seconds</b>
-        <div class="term"><span class="cmd">npx atlasui@latest init</span> <span class="flag">--next</span></div>
-        <p class="cli-note">You will be asked a few questions to set up your project:</p>
-        <div class="term">
-          <span class="q">? What is your project named? &rsaquo; my-app</span><br>
-          <span class="q">? Pick a brand color &rsaquo;</span>
-          <span class="opt on">❯ iris</span>
-          <span class="opt">&nbsp;&nbsp;ocean</span>
-          <span class="opt">&nbsp;&nbsp;forest</span>
-          <span class="opt">&nbsp;&nbsp;sunset</span>
-        </div>
-      </div>
-      <div class="kits">
-        <a class="kit" href="#"><div class="klogo">N<span style="color:var(--faint)">▲</span></div><b>Next.js</b><span>Open the Next starter kit.</span></a>
-        <a class="kit" href="#"><div class="klogo" style="color:#a855f7">V</div><b>Vite</b><span>Open the Vite starter kit.</span></a>
-        <a class="kit" href="#"><div class="klogo">⚡</div><b>Bolt</b><span>Open the Bolt starter kit.</span></a>
-        <a class="kit" href="#"><div class="klogo" style="color:#e04e7c">✳</div><b>Claude</b><span>Open the Claude starter kit.</span></a>
-        <a class="kit" href="#"><div class="klogo">v0</div><b>v0</b><span>Open the v0 starter kit.</span></a>
-        <a class="kit" href="#"><div class="klogo" style="color:#12b76a">◈</div><b>Lovable</b><span>Open the Lovable starter kit.</span></a>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="eyebrow">Installation</div>
+<h2 class="h2">A small CLI and honest starter kits</h2>
+<p class="sub">Add components with a single command, or launch from a pre-configured starter kit made for real apps rather than demos.</p>
+<div class="cli-grid">
+<div class="cli-left">
+<b>Get started in seconds</b>
+<div class="term"><span class="cmd">npx atlasui@latest init</span> <span class="flag">--next</span></div>
+<p class="cli-note">You will be asked a few questions to set up your project:</p>
+<div class="term">
+<span class="q">? What is your project named? › my-app</span><br/>
+<span class="q">? Pick a brand color ›</span>
+<span class="opt on">❯ iris</span>
+<span class="opt">  ocean</span>
+<span class="opt">  forest</span>
+<span class="opt">  sunset</span>
+</div>
+</div>
+<div class="kits">
+<a class="kit" href="#"><div class="klogo">N<span style="color:var(--faint)">▲</span></div><b>Next.js</b><span>Open the Next starter kit.</span></a>
+<a class="kit" href="#"><div class="klogo" style="color:#a855f7">V</div><b>Vite</b><span>Open the Vite starter kit.</span></a>
+<a class="kit" href="#"><div class="klogo">⚡</div><b>Bolt</b><span>Open the Bolt starter kit.</span></a>
+<a class="kit" href="#"><div class="klogo" style="color:#e04e7c">✳</div><b>Claude</b><span>Open the Claude starter kit.</span></a>
+<a class="kit" href="#"><div class="klogo">v0</div><b>v0</b><span>Open the v0 starter kit.</span></a>
+<a class="kit" href="#"><div class="klogo" style="color:#12b76a">◈</div><b>Lovable</b><span>Open the Lovable starter kit.</span></a>
+</div>
+</div>
+</div>
 </section>
-
 <!-- dark mode -->
 <section style="padding-top:0">
-  <div class="wrap">
-    <div class="eyebrow">Theming</div>
-    <h2 class="h2">Dark mode with one toggle</h2>
-    <p class="sub">Every component reads its colors from CSS variables, so dark mode is a class on the root element, not a second stylesheet.</p>
-    <div class="dm-grid">
-      <div class="dm-panel light">
-        <div class="mini"><div class="rowline"><span><b style="font-size:13px">Team inbox</b><br><span style="color:var(--muted);font-size:12px">4 unread threads</span></span><span class="pv-toggle"></span></div><div class="bar"><b style="width:62%"></b></div></div>
-        <div class="mini"><div class="rowline"><span>Storage used</span><span class="pv-badge g">Healthy</span></div><div class="bar"><b style="width:38%"></b></div></div>
-      </div>
-      <div class="dm-panel dark">
-        <div class="mini"><div class="rowline" style="color:#e4e7ec"><span><b style="font-size:13px">Team inbox</b><br><span style="color:#98a2b3;font-size:12px">4 unread threads</span></span><span class="pv-toggle"></span></div><div class="bar"><b style="width:62%"></b></div></div>
-        <div class="mini"><div class="rowline" style="color:#e4e7ec"><span>Storage used</span><span class="pv-badge g" style="background:#052e1c;border-color:#067647;color:#6ce9a6">Healthy</span></div><div class="bar"><b style="width:38%"></b></div></div>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="eyebrow">Theming</div>
+<h2 class="h2">Dark mode with one toggle</h2>
+<p class="sub">Every component reads its colors from CSS variables, so dark mode is a class on the root element, not a second stylesheet.</p>
+<div class="dm-grid">
+<div class="dm-panel light">
+<div class="mini"><div class="rowline"><span><b style="font-size:13px">Team inbox</b><br/><span style="color:var(--muted);font-size:12px">4 unread threads</span></span><span class="pv-toggle"></span></div><div class="bar"><b style="width:62%"></b></div></div>
+<div class="mini"><div class="rowline"><span>Storage used</span><span class="pv-badge g">Healthy</span></div><div class="bar"><b style="width:38%"></b></div></div>
+</div>
+<div class="dm-panel dark">
+<div class="mini"><div class="rowline" style="color:#e4e7ec"><span><b style="font-size:13px">Team inbox</b><br/><span style="color:#98a2b3;font-size:12px">4 unread threads</span></span><span class="pv-toggle"></span></div><div class="bar"><b style="width:62%"></b></div></div>
+<div class="mini"><div class="rowline" style="color:#e4e7ec"><span>Storage used</span><span class="pv-badge g" style="background:#052e1c;border-color:#067647;color:#6ce9a6">Healthy</span></div><div class="bar"><b style="width:38%"></b></div></div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- pricing -->
 <section id="pricing" style="padding-top:0">
-  <div class="wrap">
-    <div class="eyebrow">Pricing</div>
-    <h2 class="h2">Simple, transparent pricing</h2>
-    <p class="sub">Pay once and use it forever, in as many projects as you like. Every tier includes updates as they ship.</p>
-    <div class="price3">
-      <div class="tier">
-        <div class="price"><sup>$</sup>0</div>
-        <div class="tname">Atlas <em>Free</em></div>
-        <p class="tdesc">The full open-source component set, free for one user in commercial projects.</p>
-        <ul>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Single user license</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Open-source components</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Installation via CLI</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Framework starter kits</li>
-          <li class="no"><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#d0d5dd" stroke-width="1.6"/><path d="M5.8 9h6.4" stroke="#d0d5dd" stroke-width="1.8"/></svg>4k+ premium components</li>
-          <li class="no"><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#d0d5dd" stroke-width="1.6"/><path d="M5.8 9h6.4" stroke="#d0d5dd" stroke-width="1.8"/></svg>Page examples bundle</li>
-        </ul>
-        <a class="btn btn-ghost" href="#">Start free</a>
-      </div>
-      <div class="tier mid">
-        <div class="price"><sup>$</sup>249</div>
-        <div class="tname">Atlas <em>Pro Solo</em></div>
-        <p class="tdesc">A single license for solo developers, designers, and freelancers.</p>
-        <ul>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Single user license</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Everything in Free</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>4k+ components + sections</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>200+ page examples</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Free lifetime updates</li>
-          <li class="no"><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#d0d5dd" stroke-width="1.6"/><path d="M5.8 9h6.4" stroke="#d0d5dd" stroke-width="1.8"/></svg>Private repo access</li>
-        </ul>
-        <a class="btn btn-primary" href="#">Get Pro Solo</a>
-      </div>
-      <div class="tier">
-        <div class="price"><sup>$</sup>799</div>
-        <div class="tname">Atlas <em>Pro Team</em></div>
-        <p class="tdesc">Up to 10 users. For small teams, agencies, and startups.</p>
-        <ul>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Up to 10 users license</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Everything in Pro Solo</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Private repo access</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Design file sync</li>
-          <li><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#6c4cf6" stroke-width="1.6"/><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"/></svg>Onboarding support</li>
-          <li class="no"><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="none" stroke="#d0d5dd" stroke-width="1.6"/><path d="M5.8 9h6.4" stroke="#d0d5dd" stroke-width="1.8"/></svg>SSO and audit log</li>
-        </ul>
-        <a class="btn btn-primary" href="#">Get Pro Team</a>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="eyebrow">Pricing</div>
+<h2 class="h2">Simple, transparent pricing</h2>
+<p class="sub">Pay once and use it forever, in as many projects as you like. Every tier includes updates as they ship.</p>
+<div class="price3">
+<div class="tier">
+<div class="price"><sup>$</sup>0</div>
+<div class="tname">Atlas <em>Free</em></div>
+<p class="tdesc">The full open-source component set, free for one user in commercial projects.</p>
+<ul>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Single user license</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Open-source components</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Installation via CLI</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Framework starter kits</li>
+<li class="no"><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#d0d5dd" stroke-width="1.6"></circle><path d="M5.8 9h6.4" stroke="#d0d5dd" stroke-width="1.8"></path></svg>4k+ premium components</li>
+<li class="no"><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#d0d5dd" stroke-width="1.6"></circle><path d="M5.8 9h6.4" stroke="#d0d5dd" stroke-width="1.8"></path></svg>Page examples bundle</li>
+</ul>
+<a class="btn btn-ghost" href="#">Start free</a>
+</div>
+<div class="tier mid">
+<div class="price"><sup>$</sup>249</div>
+<div class="tname">Atlas <em>Pro Solo</em></div>
+<p class="tdesc">A single license for solo developers, designers, and freelancers.</p>
+<ul>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Single user license</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Everything in Free</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>4k+ components + sections</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>200+ page examples</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Free lifetime updates</li>
+<li class="no"><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#d0d5dd" stroke-width="1.6"></circle><path d="M5.8 9h6.4" stroke="#d0d5dd" stroke-width="1.8"></path></svg>Private repo access</li>
+</ul>
+<a class="btn btn-primary" href="#">Get Pro Solo</a>
+</div>
+<div class="tier">
+<div class="price"><sup>$</sup>799</div>
+<div class="tname">Atlas <em>Pro Team</em></div>
+<p class="tdesc">Up to 10 users. For small teams, agencies, and startups.</p>
+<ul>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Up to 10 users license</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Everything in Pro Solo</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Private repo access</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Design file sync</li>
+<li><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#6c4cf6" stroke-width="1.6"></circle><path d="M5.5 9.3l2.3 2.3 4.7-4.8" fill="none" stroke="#6c4cf6" stroke-width="1.8"></path></svg>Onboarding support</li>
+<li class="no"><svg height="18" viewbox="0 0 18 18" width="18"><circle cx="9" cy="9" fill="none" r="8" stroke="#d0d5dd" stroke-width="1.6"></circle><path d="M5.8 9h6.4" stroke="#d0d5dd" stroke-width="1.8"></path></svg>SSO and audit log</li>
+</ul>
+<a class="btn btn-primary" href="#">Get Pro Team</a>
+</div>
+</div>
+</div>
 </section>
-
 <!-- FAQ -->
 <section id="faq" style="padding-top:0">
-  <div class="wrap">
-    <div class="bigpanel" style="padding:64px 32px">
-      <div class="eyebrow">FAQs</div>
-      <h2 class="h2" style="margin-bottom:36px">Questions, answered</h2>
-      <div class="faq-list">
-        <details open><summary>Is Atlas UI React really open source?<span class="plus">+</span></summary>
-          <div class="ans">Yes. The core library is MIT-licensed. Paid tiers add premium components, page examples, and team features on top of the same base.</div></details>
-        <details><summary>Does it include a CLI tool?<span class="plus">+</span></summary>
-          <div class="ans">Yes. The CLI scaffolds a project, installs only the components you pick, and keeps them up to date with a diff-friendly format.</div></details>
-        <details><summary>Is dark mode supported?<span class="plus">+</span></summary>
-          <div class="ans">Every component is themed through CSS variables. Toggle a single class on the root element to switch palettes.</div></details>
-        <details><summary>Can I use it in commercial projects?<span class="plus">+</span></summary>
-          <div class="ans">The free tier covers commercial use for one user. Team use across a company needs a Pro Team license.</div></details>
-      </div>
-      <div class="centerbtn" style="margin-top:32px"><a class="btn btn-ghost" href="#">Show more FAQs</a></div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="bigpanel" style="padding:64px 32px">
+<div class="eyebrow">FAQs</div>
+<h2 class="h2" style="margin-bottom:36px">Questions, answered</h2>
+<div class="faq-list">
+<details open=""><summary>Is Atlas UI React really open source?<span class="plus">+</span></summary>
+<div class="ans">Yes. The core library is MIT-licensed. Paid tiers add premium components, page examples, and team features on top of the same base.</div></details>
+<details><summary>Does it include a CLI tool?<span class="plus">+</span></summary>
+<div class="ans">Yes. The CLI scaffolds a project, installs only the components you pick, and keeps them up to date with a diff-friendly format.</div></details>
+<details><summary>Is dark mode supported?<span class="plus">+</span></summary>
+<div class="ans">Every component is themed through CSS variables. Toggle a single class on the root element to switch palettes.</div></details>
+<details><summary>Can I use it in commercial projects?<span class="plus">+</span></summary>
+<div class="ans">The free tier covers commercial use for one user. Team use across a company needs a Pro Team license.</div></details>
+</div>
+<div class="centerbtn" style="margin-top:32px"><a class="btn btn-ghost" href="#">Show more FAQs</a></div>
+</div>
+</div>
 </section>
-
 <!-- wall of love -->
 <section style="padding-top:0">
-  <div class="wrap">
-    <div class="eyebrow">Wall of love</div>
-    <h2 class="h2">Join 120,000+ developers</h2>
-    <p class="sub">Notes from the people building with the library every week. Want to add yours?</p>
-    <div class="love3">
-      <div class="love">
-        <div class="stars">★★★★★</div>
-        <p>Swapped our in-house buttons and forms for Atlas in one sprint. <em>Shipping time dropped noticeably</em> and the accessibility audit finally passed.</p>
-        <div class="who"><i style="background:linear-gradient(135deg,#c7b8ff,#6c4cf6)"></i><span><b>Rhea Kapoor</b><span>Frontend lead, Northwind</span></span></div>
-      </div>
-      <div class="love">
-        <div class="stars">★★★★★</div>
-        <p>The command menu alone saved me a week. <em>Cleanest component API</em> I have used in a long time, and the dark mode toggle just works.</p>
-        <div class="who"><i style="background:linear-gradient(135deg,#a6f4c5,#12b76a)"></i><span><b>Dev Malhotra</b><span>Indie maker</span></span></div>
-      </div>
-      <div class="love">
-        <div class="stars">★★★★★</div>
-        <p>First project with Atlas and the whole process felt <em>way more efficient</em>. The starter kits are honest, readable code. Solid stuff.</p>
-        <div class="who"><i style="background:linear-gradient(135deg,#f9c5d1,#e04e7c)"></i><span><b>Ana Ruiz</b><span>Product designer, Fieldkit</span></span></div>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="eyebrow">Wall of love</div>
+<h2 class="h2">Join 120,000+ developers</h2>
+<p class="sub">Notes from the people building with the library every week. Want to add yours?</p>
+<div class="love3">
+<div class="love">
+<div class="stars">★★★★★</div>
+<p>Swapped our in-house buttons and forms for Atlas in one sprint. <em>Shipping time dropped noticeably</em> and the accessibility audit finally passed.</p>
+<div class="who"><i style="background:linear-gradient(135deg,#c7b8ff,#6c4cf6)"></i><span><b>Rhea Kapoor</b><span>Frontend lead, Northwind</span></span></div>
+</div>
+<div class="love">
+<div class="stars">★★★★★</div>
+<p>The command menu alone saved me a week. <em>Cleanest component API</em> I have used in a long time, and the dark mode toggle just works.</p>
+<div class="who"><i style="background:linear-gradient(135deg,#a6f4c5,#12b76a)"></i><span><b>Dev Malhotra</b><span>Indie maker</span></span></div>
+</div>
+<div class="love">
+<div class="stars">★★★★★</div>
+<p>First project with Atlas and the whole process felt <em>way more efficient</em>. The starter kits are honest, readable code. Solid stuff.</p>
+<div class="who"><i style="background:linear-gradient(135deg,#f9c5d1,#e04e7c)"></i><span><b>Ana Ruiz</b><span>Product designer, Fieldkit</span></span></div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- footer -->
 <footer class="site">
-  <div class="wrap">
-    <div class="footgrid">
-      <div class="col">
-        <a class="brand" href="#" style="margin-bottom:16px"><span class="mark"></span>Atlas UI</a>
-        <div><span class="badgechip">🏆 #1 Product of the Day</span></div>
-        <div><span class="badgechip">🏆 #1 Product of the Week</span></div>
-      </div>
-      <div class="col">
-        <b>Atlas UI</b>
-        <a href="#">Home</a><a href="#">Pricing</a><a href="#">Journal</a><a href="#">FAQs</a><a href="#">Documentation</a><a href="#">Changelog</a><a href="#">License</a>
-      </div>
-      <div class="col">
-        <b>Foundation components</b>
-        <a href="#">Color styles</a><a href="#">Typography</a><a href="#">Icons</a><a href="#">Grids &amp; spacing</a><a href="#">Cursors</a>
-      </div>
-      <div class="col">
-        <b>Marketing examples</b>
-        <a href="#">Landing pages</a><a href="#">Pricing pages</a><a href="#">FAQ pages</a><a href="#">Sign up pages</a><a href="#">Blog sections</a>
-      </div>
-      <div class="col">
-        <b>Application components</b>
-        <a href="#">Activity feeds</a><a href="#">Calendars</a><a href="#">Command menus</a><a href="#">Date pickers</a><a href="#">Line &amp; bar charts</a>
-      </div>
-    </div>
-    <div class="legal">
-      <span class="copy">© 2026 Atlas UI Study. Fictional library; original study content.</span>
-      <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a><a href="#">Security</a>
-    </div>
-    <div class="giant">Atlas UI</div>
-  </div>
+<div class="wrap">
+<div class="footgrid">
+<div class="col">
+<a class="brand" href="#" style="margin-bottom:16px"><span class="mark"></span>Atlas UI</a>
+<div><span class="badgechip">🏆 #1 Product of the Day</span></div>
+<div><span class="badgechip">🏆 #1 Product of the Week</span></div>
+</div>
+<div class="col">
+<b>Atlas UI</b>
+<a href="#">Home</a><a href="#">Pricing</a><a href="#">Journal</a><a href="#">FAQs</a><a href="#">Documentation</a><a href="#">Changelog</a><a href="#">License</a>
+</div>
+<div class="col">
+<b>Foundation components</b>
+<a href="#">Color styles</a><a href="#">Typography</a><a href="#">Icons</a><a href="#">Grids &amp; spacing</a><a href="#">Cursors</a>
+</div>
+<div class="col">
+<b>Marketing examples</b>
+<a href="#">Landing pages</a><a href="#">Pricing pages</a><a href="#">FAQ pages</a><a href="#">Sign up pages</a><a href="#">Blog sections</a>
+</div>
+<div class="col">
+<b>Application components</b>
+<a href="#">Activity feeds</a><a href="#">Calendars</a><a href="#">Command menus</a><a href="#">Date pickers</a><a href="#">Line &amp; bar charts</a>
+</div>
+</div>
+<div class="legal">
+<span class="copy">© 2026 Atlas UI Study. Fictional library; original study content.</span>
+<a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a><a href="#">Security</a>
+</div>
+<div class="giant">Atlas UI</div>
+</div>
 </footer>
-
 </body>
 </html>
