@@ -1,7 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Weekend Build Lab</title>
 <style>
 :root{--ink:#0b0b0c;--coal:#131316;--panel:#1a1a1f;--line:#2a2a30;--paper:#ffffff;--mist:#f5f5f3;--fog:#a7a7ad;--fog-d:#5c5c62;--lime:#c9f24b;--lime-d:#a8d42e;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
@@ -65,21 +66,21 @@ section{padding:96px 0}
 .card h3{margin:0 0 6px;font-size:18px;letter-spacing:-.01em}
 .card p{margin:0;color:var(--fog);font-size:14px}
 .visual{height:170px;border-bottom:1px solid var(--line);background:linear-gradient(150deg,#1f1f26,#141419);position:relative;overflow:hidden}
-.v-prompt:before{content:"";position:absolute;inset:26px 22px;background:repeating-linear-gradient(to bottom,#33333c 0 7px,transparent 7px 22px)}
-.v-prompt:after{content:"";position:absolute;left:22px;top:48px;width:52%;height:9px;background:var(--lime);opacity:.75}
-.v-nodes:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--lime);left:26%;top:44%;box-shadow:90px -34px 0 #4c4c58,180px 6px 0 #4c4c58,90px 42px 0 #4c4c58}
-.v-nodes:after{content:"";position:absolute;left:calc(26% + 8px);top:calc(44% + 4px);width:190px;height:1px;background:#4c4c58;transform:rotate(-14deg);transform-origin:left}
-.v-wave{display:flex;align-items:center;justify-content:center;gap:5px}
-.v-wave i{width:5px;border-radius:3px;background:#57575f}
-.v-wave i:nth-child(4),.v-wave i:nth-child(5){background:var(--lime)}
-.v-wave i:nth-child(1){height:22px}.v-wave i:nth-child(2){height:44px}.v-wave i:nth-child(3){height:70px}.v-wave i:nth-child(4){height:96px}.v-wave i:nth-child(5){height:64px}.v-wave i:nth-child(6){height:40px}.v-wave i:nth-child(7){height:20px}
-.v-tiles{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px;padding:22px}
-.v-tiles i{border-radius:6px;background:linear-gradient(140deg,#33333c,#222228)}
-.v-tiles i:nth-child(2){background:linear-gradient(140deg,#4a5130,#2b2f1c)}
-.v-slider:before{content:"";position:absolute;left:14%;right:14%;top:50%;height:3px;border-radius:2px;background:#3d3d46}
-.v-slider:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:var(--lime);border:5px solid #141419;left:56%;top:calc(50% - 12px)}
-.v-ship:before{content:"";position:absolute;width:56px;height:56px;border-radius:50%;border:2px solid var(--lime);left:calc(50% - 28px);top:calc(50% - 28px)}
-.v-ship:after{content:"✓";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:var(--lime);font-size:24px;font-weight:700}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* schedule */
 .sched{display:grid;grid-template-columns:340px 1fr;gap:56px;align-items:start}
 .sess-list button{display:grid;grid-template-columns:44px 1fr;gap:8px;width:100%;text-align:left;background:none;border:0;padding:18px 0;border-bottom:1px solid #e6e6e2;color:#8b8b90}
@@ -177,145 +178,145 @@ img.face{display:block;object-fit:cover}
 .showcase img{display:block;width:100%;max-width:1120px;height:auto;margin:0 auto;border-radius:18px;border:1px solid rgba(212,255,79,.18);box-shadow:0 30px 70px -26px rgba(0,0,0,.7)}
 @media (max-width:640px){.showcase{padding:8px 16px 48px}.showcase img{border-radius:12px}}
 </style>
-</head>
+<style>.artifact{height:190px!important;padding:11px;background:#141419!important;text-align:left}.artifact header{height:29px;border:1px solid #33353d;border-radius:7px 7px 0 0;background:#202129;display:flex;align-items:center;gap:7px;padding:0 9px;font-size:8px}.artifact header i{width:6px;height:6px;border-radius:50%;background:var(--lime);box-shadow:10px 0 #666,20px 0 #444}.artifact header b{margin-left:21px}.artifact header span{margin-left:auto}.artifact main{height:133px;border:1px solid #33353d;padding:10px;background:#181920}.artifact main>small{font-size:7px;color:#aaa}.artifact section{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin:8px 0}.artifact section b{background:#24262e;border-radius:5px;padding:10px 6px;font-size:8px}.artifact footer{display:flex;align-items:center;background:#202129;padding:6px;border-radius:5px;font-size:7px}.artifact footer>i{width:18px;height:18px;background:var(--lime);border-radius:4px}.artifact footer div{display:flex;flex-direction:column;margin-left:6px}.artifact footer small{font-size:6px;color:#888}.artifact footer button{margin-left:auto;border:0;background:var(--lime);font-size:6px;padding:5px}</style></head>
 <body>
 <header class="nav"><div class="wrap"><span class="brand">Weekend Build Lab</span>
 <nav class="nav-links" id="navlinks"><a href="#program">For Teams</a><a href="#schedule">Field Notes</a><a href="#faq">Contact</a><a href="#final">Teach With Us</a><a href="#final">Log in</a><a class="nav-cta" href="#final">Browse Programs</a></nav>
-<button class="menu-btn" id="menubtn" aria-label="Menu">☰</button></div></header>
+<button aria-label="Menu" class="menu-btn" id="menubtn">☰</button></div></header>
 <main>
 <section class="hero" id="hero">
- <div class="glow"></div><div class="ridge r1"></div><div class="ridge r2"></div><div class="grain"></div>
- <div class="wrap hero-inner">
-  <h1>Become an AI Builder in One Weekend</h1>
-  <p class="lede">A live, hands-on workshop that takes you from curious to capable: two days, five sessions, and a working build of your own.</p>
-  <div class="hero-row">
-   <a class="pill" href="#final">Start with the Free Workshop</a>
-   <div class="meta">
-    <div><span>Start Date</span><b>03 Oct 2026</b></div>
-    <div><span>Start Time</span><b>10 AM IST</b></div>
-   </div>
-  </div>
-  <div class="stats">
-   <div class="stat"><b>40K+</b><span>Active Builders</span></div>
-   <div class="stat"><b>90+</b><span>Countries</span></div>
-   <div class="stat"><b>4.8/5</b><span>Learner Rating</span></div>
-  </div>
- </div>
+<div class="glow"></div><div class="ridge r1"></div><div class="ridge r2"></div><div class="grain"></div>
+<div class="wrap hero-inner">
+<h1>Become an AI Builder in One Weekend</h1>
+<p class="lede">A live, hands-on workshop that takes you from curious to capable: two days, five sessions, and a working build of your own.</p>
+<div class="hero-row">
+<a class="pill" href="#final">Start with the Free Workshop</a>
+<div class="meta">
+<div><span>Start Date</span><b>03 Oct 2026</b></div>
+<div><span>Start Time</span><b>10 AM IST</b></div>
+</div>
+</div>
+<div class="stats">
+<div class="stat"><b>40K+</b><span>Active Builders</span></div>
+<div class="stat"><b>90+</b><span>Countries</span></div>
+<div class="stat"><b>4.8/5</b><span>Learner Rating</span></div>
+</div>
+</div>
 </section>
-<figure class="showcase"><img src="./showcase.jpg" alt="Isometric illustration of a laptop with code, an AI robot companion and lime geometric shapes" width="1429" height="804" loading="lazy"></figure><section class="backers"><div class="wrap">
- <div class="section-head"><div class="eyebrow">Backed by Practitioners</div>
- <h2>Built with operators who ship for a living</h2>
- <p>Advisors and angel backers from products you already use every day.</p></div>
- <div class="avatar-grid">
-  <div class="backer"><img class="face" src="assets/av-maya.svg" alt="Maya Rao"><b>Maya Rao</b><span>Early engineer, two exits</span></div>
-  <div class="backer"><img class="face" src="assets/av-dev.svg" alt="Dev Khanna"><b>Dev Khanna</b><span>Fintech founder</span></div>
-  <div class="backer"><img class="face" src="assets/av-sofia.svg" alt="Sofia Lind"><b>Sofia Lind</b><span>Design lead, dev tools</span></div>
-  <div class="backer"><img class="face" src="assets/av-arun.svg" alt="Arun Okafor"><b>Arun Okafor</b><span>ML infra, ex-big tech</span></div>
-  <div class="backer"><img class="face" src="assets/av-june.svg" alt="June Park"><b>June Park</b><span>Creator and angel investor</span></div>
-  <div class="backer"><img class="face" src="assets/av-tara.svg" alt="Tara Vaid"><b>Tara Vaid</b><span>Growth advisor, SaaS</span></div>
- </div>
+<figure class="showcase"><img alt="Isometric illustration of a laptop with code, an AI robot companion and lime geometric shapes" height="804" loading="lazy" src="./showcase.jpg" width="1429"/></figure><section class="backers"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Backed by Practitioners</div>
+<h2>Built with operators who ship for a living</h2>
+<p>Advisors and angel backers from products you already use every day.</p></div>
+<div class="avatar-grid">
+<div class="backer"><img alt="Maya Rao" class="face" src="assets/av-maya.svg"/><b>Maya Rao</b><span>Early engineer, two exits</span></div>
+<div class="backer"><img alt="Dev Khanna" class="face" src="assets/av-dev.svg"/><b>Dev Khanna</b><span>Fintech founder</span></div>
+<div class="backer"><img alt="Sofia Lind" class="face" src="assets/av-sofia.svg"/><b>Sofia Lind</b><span>Design lead, dev tools</span></div>
+<div class="backer"><img alt="Arun Okafor" class="face" src="assets/av-arun.svg"/><b>Arun Okafor</b><span>ML infra, ex-big tech</span></div>
+<div class="backer"><img alt="June Park" class="face" src="assets/av-june.svg"/><b>June Park</b><span>Creator and angel investor</span></div>
+<div class="backer"><img alt="Tara Vaid" class="face" src="assets/av-tara.svg"/><b>Tara Vaid</b><span>Growth advisor, SaaS</span></div>
+</div>
 </div></section>
 <section><div class="wrap">
- <div class="section-head"><div class="eyebrow">Your Peers</div>
- <h2>Learn alongside builders from real teams</h2></div>
- <div class="logos"><span>Northwind</span><span>Helios</span><span>BluePeak</span><span>Framely</span><span>Octane</span><span>Datawise</span><span>Cirrus</span><span>Modulr</span></div>
+<div class="section-head"><div class="eyebrow">Your Peers</div>
+<h2>Learn alongside builders from real teams</h2></div>
+<div class="logos"><span>Northwind</span><span>Helios</span><span>BluePeak</span><span>Framely</span><span>Octane</span><span>Datawise</span><span>Cirrus</span><span>Modulr</span></div>
 </div></section>
 <section id="program"><div class="wrap">
- <div class="section-head"><div class="eyebrow">The Program</div>
- <h2>One weekend. A working build.</h2>
- <p>No lectures you forget by Tuesday. Every session ends with something running on your own machine.</p></div>
- <div class="cards">
-  <div class="card"><div class="visual v-prompt"></div><div class="pad"><h3>Prompt Systems</h3><p>A repeatable framework that gets reliable output from any model.</p></div></div>
-  <div class="card"><div class="visual v-nodes"></div><div class="pad"><h3>Custom Assistants</h3><p>Configure an assistant tuned to your role, files, and tone.</p></div></div>
-  <div class="card"><div class="visual v-slider"></div><div class="pad"><h3>Automations</h3><p>Connect tools and hand off the busywork that eats your week.</p></div></div>
-  <div class="card"><div class="visual v-tiles"><i></i><i></i><i></i><i></i></div><div class="pad"><h3>Visual Assets</h3><p>Produce on-brief images and short clips for real projects.</p></div></div>
-  <div class="card"><div class="visual v-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="pad"><h3>Voice and Audio</h3><p>Narration, voiceovers, and sound for the things you ship.</p></div></div>
-  <div class="card"><div class="visual v-ship"></div><div class="pad"><h3>Ship a Product</h3><p>Leave with one deployed artifact you can show on Monday.</p></div></div>
- </div>
+<div class="section-head"><div class="eyebrow">The Program</div>
+<h2>One weekend. A working build.</h2>
+<p>No lectures you forget by Tuesday. Every session ends with something running on your own machine.</p></div>
+<div class="cards">
+<div class="card"><div class="visual artifact"><header><i></i><b>Prompt Studio</b><span>•••</span></header><main><small>Interview synthesizer</small><section><b>12 sources</b><b>Run complete</b></section><footer><i></i><div><b>Workflow ready</b><small>Tested with sample data</small></div><button>Open</button></footer></main></div><div class="pad"><h3>Prompt Systems</h3><p>A repeatable framework that gets reliable output from any model.</p></div></div>
+<div class="card"><div class="visual artifact"><header><i></i><b>Assistant Builder</b><span>•••</span></header><main><small>Support triage</small><section><b>Billing · 18</b><b>Product · 7</b></section><footer><i></i><div><b>Workflow ready</b><small>Tested with sample data</small></div><button>Open</button></footer></main></div><div class="pad"><h3>Custom Assistants</h3><p>Configure an assistant tuned to your role, files, and tone.</p></div></div>
+<div class="card"><div class="visual artifact"><header><i></i><b>Automation Canvas</b><span>•••</span></header><main><small>Weekly report</small><section><b>Sheets</b><b>Runs Fridays</b></section><footer><i></i><div><b>Workflow ready</b><small>Tested with sample data</small></div><button>Open</button></footer></main></div><div class="pad"><h3>Automations</h3><p>Connect tools and hand off the busywork that eats your week.</p></div></div>
+<div class="card"><div class="visual artifact"><header><i></i><b>Visual Lab</b><span>•••</span></header><main><small>Launch campaign</small><section><b>Electric lime</b><b>8 posts ready</b></section><footer><i></i><div><b>Workflow ready</b><small>Tested with sample data</small></div><button>Open</button></footer></main></div><div class="pad"><h3>Visual Assets</h3><p>Produce on-brief images and short clips for real projects.</p></div></div>
+<div class="card"><div class="visual artifact"><header><i></i><b>Voice Agent</b><span>•••</span></header><main><small>Call rehearsal</small><section><b>Live · 02:14</b><b>Coach active</b></section><footer><i></i><div><b>Workflow ready</b><small>Tested with sample data</small></div><button>Open</button></footer></main></div><div class="pad"><h3>Voice and Audio</h3><p>Narration, voiceovers, and sound for the things you ship.</p></div></div>
+<div class="card"><div class="visual artifact"><header><i></i><b>Deploy Center</b><span>•••</span></header><main><small>Research assistant</small><section><b>Production</b><b>184 users</b></section><footer><i></i><div><b>Workflow ready</b><small>Tested with sample data</small></div><button>Open</button></footer></main></div><div class="pad"><h3>Ship a Product</h3><p>Leave with one deployed artifact you can show on Monday.</p></div></div>
+</div>
 </div></section>
 <section class="light" id="schedule"><div class="wrap">
- <div class="section-head"><div class="eyebrow">Weekend Schedule</div>
- <h2>Two days. Five sessions.</h2>
- <p>Mornings build the foundation, afternoons turn it into shipped work.</p></div>
- <div class="sched">
-  <div class="sess-list" id="sesslist">
-   <button class="active" data-s="0"><span class="n">01</span><b>Foundations of Generative AI</b></button>
-   <button data-s="1"><span class="n">02</span><b>Your First Custom Assistant</b></button>
-   <button data-s="2"><span class="n">03</span><b>Building Products with AI</b></button>
-   <button data-s="3"><span class="n">04</span><b>Visual and Audio Production</b></button>
-   <button data-s="4"><span class="n">05</span><b>Demo Day and Next Steps</b></button>
-  </div>
-  <div class="detail">
-   <div class="banner"></div>
-   <div class="body">
-    <div class="meta" id="dmeta">Day 1 · Session 1 · 10 AM – 1 PM IST</div>
-    <h3 id="dtitle">Foundations of Generative AI</h3>
-    <p id="dsum">Understand how modern AI actually works, so every later session builds on solid ground instead of guesswork.</p>
-    <ul class="checks" id="dchecks"></ul>
-   </div>
-  </div>
- </div>
+<div class="section-head"><div class="eyebrow">Weekend Schedule</div>
+<h2>Two days. Five sessions.</h2>
+<p>Mornings build the foundation, afternoons turn it into shipped work.</p></div>
+<div class="sched">
+<div class="sess-list" id="sesslist">
+<button class="active" data-s="0"><span class="n">01</span><b>Foundations of Generative AI</b></button>
+<button data-s="1"><span class="n">02</span><b>Your First Custom Assistant</b></button>
+<button data-s="2"><span class="n">03</span><b>Building Products with AI</b></button>
+<button data-s="3"><span class="n">04</span><b>Visual and Audio Production</b></button>
+<button data-s="4"><span class="n">05</span><b>Demo Day and Next Steps</b></button>
+</div>
+<div class="detail">
+<div class="banner"></div>
+<div class="body">
+<div class="meta" id="dmeta">Day 1 · Session 1 · 10 AM – 1 PM IST</div>
+<h3 id="dtitle">Foundations of Generative AI</h3>
+<p id="dsum">Understand how modern AI actually works, so every later session builds on solid ground instead of guesswork.</p>
+<ul class="checks" id="dchecks"></ul>
+</div>
+</div>
+</div>
 </div></section>
 <section><div class="wrap">
- <div class="section-head"><div class="eyebrow">Who It Is For</div>
- <h2>Made for people who build</h2></div>
- <div class="aud-grid">
-  <div class="aud"><h3>Operators and marketers</h3><p>Automate reporting, content, and research so the week has room for judgment work.</p></div>
-  <div class="aud"><h3>Founders and indie builders</h3><p>Prototype and ship without waiting on a hire, and brief technical teams far better.</p></div>
-  <div class="aud"><h3>Career switchers</h3><p>Build visible proof of AI fluency with a project you can walk anyone through.</p></div>
- </div>
+<div class="section-head"><div class="eyebrow">Who It Is For</div>
+<h2>Made for people who build</h2></div>
+<div class="aud-grid">
+<div class="aud"><h3>Operators and marketers</h3><p>Automate reporting, content, and research so the week has room for judgment work.</p></div>
+<div class="aud"><h3>Founders and indie builders</h3><p>Prototype and ship without waiting on a hire, and brief technical teams far better.</p></div>
+<div class="aud"><h3>Career switchers</h3><p>Build visible proof of AI fluency with a project you can walk anyone through.</p></div>
+</div>
 </div></section>
 <section><div class="wrap">
- <div class="section-head"><div class="eyebrow">Hear It From Them</div>
- <h2>Different person by Monday</h2>
- <p>Notes from builders who took the weekend seriously.</p></div>
- <div class="quotes">
-  <div class="quote"><p>I automated the weekly report that used to eat my Friday afternoon. My manager noticed before I said anything.</p><div class="qwho"><div class="qface">PS</div><div><b>Priya S</b><span>Marketing ops lead</span></div></div></div>
-  <div class="quote"><p>I came in skeptical and left with a working assistant that answers support questions in our tone.</p><div class="qwho"><div class="qface">JM</div><div><b>Jonas M</b><span>Founder</span></div></div></div>
-  <div class="quote"><p>The prompt framework alone was worth it. Everything after that felt like compound interest.</p><div class="qwho"><div class="qface">AR</div><div><b>Aisha R</b><span>Product manager</span></div></div></div>
-  <div class="quote"><p>I finally understand what the models are doing. That changed how I delegate to them completely.</p><div class="qwho"><div class="qface">TC</div><div><b>Tom C</b><span>Consultant</span></div></div></div>
-  <div class="quote"><p>Shipped my first AI-built internal tool on Sunday night. It is still in daily use three months later.</p><div class="qwho"><div class="qface">NK</div><div><b>Nadia K</b><span>Operations</span></div></div></div>
-  <div class="quote"><p>The cohort chat is still active. Having people to build with after the weekend was the surprise benefit.</p><div class="qwho"><div class="qface">RB</div><div><b>Ravi B</b><span>Engineer</span></div></div></div>
- </div>
+<div class="section-head"><div class="eyebrow">Hear It From Them</div>
+<h2>Different person by Monday</h2>
+<p>Notes from builders who took the weekend seriously.</p></div>
+<div class="quotes">
+<div class="quote"><p>I automated the weekly report that used to eat my Friday afternoon. My manager noticed before I said anything.</p><div class="qwho"><div class="qface">PS</div><div><b>Priya S</b><span>Marketing ops lead</span></div></div></div>
+<div class="quote"><p>I came in skeptical and left with a working assistant that answers support questions in our tone.</p><div class="qwho"><div class="qface">JM</div><div><b>Jonas M</b><span>Founder</span></div></div></div>
+<div class="quote"><p>The prompt framework alone was worth it. Everything after that felt like compound interest.</p><div class="qwho"><div class="qface">AR</div><div><b>Aisha R</b><span>Product manager</span></div></div></div>
+<div class="quote"><p>I finally understand what the models are doing. That changed how I delegate to them completely.</p><div class="qwho"><div class="qface">TC</div><div><b>Tom C</b><span>Consultant</span></div></div></div>
+<div class="quote"><p>Shipped my first AI-built internal tool on Sunday night. It is still in daily use three months later.</p><div class="qwho"><div class="qface">NK</div><div><b>Nadia K</b><span>Operations</span></div></div></div>
+<div class="quote"><p>The cohort chat is still active. Having people to build with after the weekend was the surprise benefit.</p><div class="qwho"><div class="qface">RB</div><div><b>Ravi B</b><span>Engineer</span></div></div></div>
+</div>
 </div></section>
 <section><div class="wrap">
- <div class="section-head"><div class="eyebrow">Keep Going</div>
- <h2>Ready for more after the weekend</h2></div>
- <div class="prog-grid">
-  <div class="prog"><h3>Builder Fellowship</h3><p>A six-month path from fundamentals to deployment, with mentors reviewing your real work.</p><div class="chips"><span>6 months</span><span>Hybrid</span><span>90+ countries</span></div></div>
-  <div class="prog"><h3>Team Accelerator</h3><p>A focused track for companies bringing AI fluency to a whole team at once.</p><div class="chips"><span>40+ hours</span><span>On-site or remote</span><span>Custom curriculum</span></div></div>
- </div>
+<div class="section-head"><div class="eyebrow">Keep Going</div>
+<h2>Ready for more after the weekend</h2></div>
+<div class="prog-grid">
+<div class="prog"><h3>Builder Fellowship</h3><p>A six-month path from fundamentals to deployment, with mentors reviewing your real work.</p><div class="chips"><span>6 months</span><span>Hybrid</span><span>90+ countries</span></div></div>
+<div class="prog"><h3>Team Accelerator</h3><p>A focused track for companies bringing AI fluency to a whole team at once.</p><div class="chips"><span>40+ hours</span><span>On-site or remote</span><span>Custom curriculum</span></div></div>
+</div>
 </div></section>
 <section class="light" id="faq"><div class="wrap faq">
- <div><div class="eyebrow">Common Questions</div><h2>Everything you are wondering</h2></div>
- <div>
-  <div class="q open"><button>What is the Weekend Build Lab?<span class="plus">+</span></button><div class="a">A free, live, two-day workshop. Five hands-on sessions over one weekend, each ending with working output you keep.</div></div>
-  <div class="q"><button>Do I need to know how to code?<span class="plus">+</span></button><div class="a">No. Every session is tool-first. If you do code, there are deeper tracks inside each exercise.</div></div>
-  <div class="q"><button>Is the workshop really free?<span class="plus">+</span></button><div class="a">Yes. The weekend is the front door to the longer fellowship, but nothing is required beyond showing up.</div></div>
-  <div class="q"><button>What if I miss a session?<span class="plus">+</span></button><div class="a">Sessions are live and interactive, so we ask you to pick a weekend you can protect. A catch-up clinic runs midweek.</div></div>
-  <div class="q"><button>What do I leave with?<span class="plus">+</span></button><div class="a">A custom assistant, at least one automation, a visual asset pack, and one deployed mini-product.</div></div>
- </div>
+<div><div class="eyebrow">Common Questions</div><h2>Everything you are wondering</h2></div>
+<div>
+<div class="q open"><button>What is the Weekend Build Lab?<span class="plus">+</span></button><div class="a">A free, live, two-day workshop. Five hands-on sessions over one weekend, each ending with working output you keep.</div></div>
+<div class="q"><button>Do I need to know how to code?<span class="plus">+</span></button><div class="a">No. Every session is tool-first. If you do code, there are deeper tracks inside each exercise.</div></div>
+<div class="q"><button>Is the workshop really free?<span class="plus">+</span></button><div class="a">Yes. The weekend is the front door to the longer fellowship, but nothing is required beyond showing up.</div></div>
+<div class="q"><button>What if I miss a session?<span class="plus">+</span></button><div class="a">Sessions are live and interactive, so we ask you to pick a weekend you can protect. A catch-up clinic runs midweek.</div></div>
+<div class="q"><button>What do I leave with?<span class="plus">+</span></button><div class="a">A custom assistant, at least one automation, a visual asset pack, and one deployed mini-product.</div></div>
+</div>
 </div></section>
 <section class="final" id="final"><div class="wrap">
- <div class="eyebrow">Next Cohort Opens Soon</div>
- <h2>Give AI one weekend. Keep the skill for good.</h2>
- <p>Free to join. Live and hands-on. Seats are capped so every builder gets reviewed.</p>
- <a class="pill" href="#hero">Save My Free Seat</a>
+<div class="eyebrow">Next Cohort Opens Soon</div>
+<h2>Give AI one weekend. Keep the skill for good.</h2>
+<p>Free to join. Live and hands-on. Seats are capped so every builder gets reviewed.</p>
+<a class="pill" href="#hero">Save My Free Seat</a>
 </div></section>
 </main>
 <footer><div class="wrap">
- <div class="foot-grid">
-  <div><b>Weekend Build Lab</b><p style="margin:0;max-width:32ch">A private landing-page study. Original content, generated visuals, no real cohort implied.</p></div>
-  <div><b>Programs</b><a href="#program">Weekend Workshop</a><a href="#program">Builder Fellowship</a><a href="#program">Team Accelerator</a></div>
-  <div><b>Company</b><a href="#faq">Contact</a><a href="#faq">Mentors</a><a href="#faq">Alumni</a></div>
-  <div><b>Legal</b><a href="#faq">Terms</a><a href="#faq">Privacy</a><a href="#faq">Refunds</a></div>
- </div>
- <div class="copyright">© Weekend Build Lab study. Structure studied from a live reference; all copy and artwork are original.</div>
+<div class="foot-grid">
+<div><b>Weekend Build Lab</b><p style="margin:0;max-width:32ch">A private landing-page study. Original content, generated visuals, no real cohort implied.</p></div>
+<div><b>Programs</b><a href="#program">Weekend Workshop</a><a href="#program">Builder Fellowship</a><a href="#program">Team Accelerator</a></div>
+<div><b>Company</b><a href="#faq">Contact</a><a href="#faq">Mentors</a><a href="#faq">Alumni</a></div>
+<div><b>Legal</b><a href="#faq">Terms</a><a href="#faq">Privacy</a><a href="#faq">Refunds</a></div>
+</div>
+<div class="copyright">© Weekend Build Lab study. Structure studied from a live reference; all copy and artwork are original.</div>
 </div></footer>
 <div class="sticky-bar"><div class="wrap">
- <div class="sb-title">2-Day AI Build Weekend</div>
- <a class="pill" href="#final">Save my free seat</a>
- <div class="sb-offer"><span class="strike">$799</span> <b>Free</b><br>Offer expires in <span id="cd">10:00</span></div>
+<div class="sb-title">2-Day AI Build Weekend</div>
+<a class="pill" href="#final">Save my free seat</a>
+<div class="sb-offer"><span class="strike">$799</span> <b>Free</b><br/>Offer expires in <span id="cd">10:00</span></div>
 </div></div>
 <script>
 var sessions=[

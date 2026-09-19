@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Spectra - Read any website's design. In one click.</title>
-<meta name="description" content="Original landing-page study based on the visual system of woblo.in: a light browser-extension SaaS page with sticker headlines, demo-mock feature cards and a block-color footer wordmark.">
+<meta content="Original landing-page study based on the visual system of woblo.in: a light browser-extension SaaS page with sticker headlines, demo-mock feature cards and a block-color footer wordmark." name="description"/>
 <style>
 :root{
   --bg:#fbfbfb; --ink:#101013; --muted:#5f6470; --faint:#8a8f9c;
@@ -212,279 +213,257 @@ img.avatar{display:block;object-fit:cover}
 .showcase img{display:block;width:100%;max-width:1120px;height:auto;margin:0 auto;border-radius:18px;border:1px solid rgba(47,107,255,.18);box-shadow:0 30px 60px -28px rgba(47,107,255,.30)}
 @media (max-width:640px){.showcase{padding:8px 16px 48px}.showcase img{border-radius:12px}}
 </style>
-</head>
+<style>.mock{min-height:190px!important;padding:10px!important;display:block!important}.capture{height:168px;background:white;border:1px solid #ddd;border-radius:8px;overflow:hidden;text-align:left}.capture header{height:29px;display:flex;justify-content:space-between;align-items:center;padding:0 8px;border-bottom:1px solid #eee;font-size:7px}.capture header span{color:#777}.site{height:139px;padding:17px;background:linear-gradient(120deg,#f6ede2 64%,#d7ad7e 64%);display:flex;flex-direction:column;align-items:flex-start;position:relative}.site small{font-size:6px}.site b{font-size:18px;line-height:1}.site button{background:#111;color:white;border:0;font-size:6px;padding:5px;margin-top:7px}.site em{position:absolute;bottom:7px;border:1px solid #2f6bff;background:white;padding:4px;font-size:5px}.palette{height:139px;display:grid;grid-template-columns:1.4fr 1fr}.palette>b{background:linear-gradient(145deg,#f66c54,#ffd991);display:grid;place-items:center;font-size:15px;color:#183044}.palette aside{padding:7px;display:flex;flex-direction:column;gap:3px}.palette i{font-style:normal;font-size:6px;padding:6px;border-left:11px solid #f66c54;background:#fee}.palette i:nth-child(2){border-color:#ffd991}.palette i:nth-child(3){border-color:#183044}.palette i:nth-child(4){border-color:#f7f1e7}.typer{height:139px;padding:12px;display:grid;grid-template-columns:1fr 1fr;background:#f8f8fa}.typer small{grid-column:1/-1;font-size:6px}.typer>b{font:700 48px serif}.typer aside{font-size:8px;line-height:2}.assets{height:139px;background:#f4f5f8;padding:9px;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}.assets>i{height:70px;background:linear-gradient(145deg,#cadaff,#8769f3);color:white;display:flex;align-items:end;padding:5px;font:normal 6px sans-serif}.assets>i:nth-child(2){background:linear-gradient(145deg,#ffd2ad,#f27666)}.assets>i:nth-child(3){background:linear-gradient(145deg,#b5f0d4,#2d9f7e)}.assets>i:nth-child(4){background:#222}.assets footer{grid-column:1/-1;font-size:7px}.assets button{float:right;background:#111;color:white;border:0;padding:5px;font-size:6px}.code,.spec{height:139px;background:#17181d;color:#ddd;padding:10px}.code>b,.spec>b{font-size:7px}.code pre{font:8px/1.6 monospace;color:#8ab4ff}.spec{display:flex;flex-direction:column;gap:5px}.spec small{font-size:5px;color:#888}.spec div{display:flex;gap:4px}.spec i{width:18px;height:10px;background:#2f6bff}.spec i:nth-child(2){background:#111}.spec i:nth-child(3){background:#ddd}.spec strong{font-size:7px}</style></head>
 <body>
-
 <header class="nav">
-  <div class="nav-in">
-    <a class="logo" href="#"><span class="logo-mark"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 2l4 8 1.4-3.2L10.6 6 2 2z" fill="#fff"/></svg></span>Spectra</a>
-    <nav class="nav-links">
-      <a href="#features">Features</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQs</a>
-    </nav>
-    <a class="nav-cta" href="#pricing"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="2.6" fill="currentColor"/></svg>Get Spectra</a>
-  </div>
+<div class="nav-in">
+<a class="logo" href="#"><span class="logo-mark"><svg fill="none" height="12" viewbox="0 0 12 12" width="12"><path d="M2 2l4 8 1.4-3.2L10.6 6 2 2z" fill="#fff"></path></svg></span>Spectra</a>
+<nav class="nav-links">
+<a href="#features">Features</a>
+<a href="#pricing">Pricing</a>
+<a href="#faq">FAQs</a>
+</nav>
+<a class="nav-cta" href="#pricing"><svg fill="none" viewbox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.6"></circle><circle cx="8" cy="8" fill="currentColor" r="2.6"></circle></svg>Get Spectra</a>
+</div>
 </header>
-
 <main>
 <!-- hero -->
 <div class="hero">
-  <p class="proof"><b>4.9</b> stars &middot; <b>18,000+</b> designers</p>
-  <h1>Read any website&rsquo;s
-    <span class="scribble">design<svg viewBox="0 0 120 44" fill="none"><path d="M8 30C20 12 52 6 78 9c24 3 36 12 32 22-4 11-30 13-54 11-22-2-44-7-46-16-2-8 14-15 34-17" stroke="#0f7fff" stroke-width="4.5" stroke-linecap="round"/></svg></span>. In one click.</h1>
-  <p class="lede">Spectra is a browser extension that reads colors, type, spacing and assets off any live page, and hands them to your stack as ready-to-use tokens.</p>
-  <div class="cta-row">
-    <a class="btn btn-primary" href="#pricing"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#0b0b0d" stroke-width="1.5"/><circle cx="8" cy="8" r="2.6" fill="#0b0b0d"/></svg>add to browser</a>
-    <a class="btn btn-ghost" href="#features"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 2l5 10 1.2-3.4L11.6 7.4 2 2z" fill="#101013"/></svg>try it live</a>
-  </div>
-
-  <div class="stage">
-    <div class="inspect-chip">
-      <span class="tag">img &middot; 894 &times; 447</span>
-      <span><span class="fname">hero-poster.png</span><br><span class="fdim">1440 &times; 900 &middot; 812 KB</span></span>
-    </div>
-    <div class="browser">
-      <div class="chrome-bar">
-        <span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span>
-        <span class="urlbar">faraway.travel</span>
-        <span class="chrome-icons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="14" height="14"><path d="M8.5 12.75L10.75 15L8.5 17.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><path d="M4.655 4.505C3.4774 5.6413 2.75 7.2359 2.75 9C2.75 12.452 5.55 15.25 9 15.25C9.6 15.25 10.17 15.166 10.72 15.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><path d="M9.5 5.25L7.25 3L9.5 0.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.35"></path><path d="M13.3444 13.4937C14.5146 12.3575 15.25 10.7634 15.25 9C15.25 5.548 12.45 2.75 9.00002 2.75C8.42002 2.75 7.86002 2.82895 7.33002 2.97595" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.35"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="14" height="14"><path d="M14.25,16.25l-5.25-3.5-5.25,3.5V3.75c0-1.105,.895-2,2-2h6.5c1.105,0,2,.895,2,2v12.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="14" height="14"><path d="M14.75,8.25c.372,0,.716,.118,1,.317v-2.317c0-1.104-.895-2-2-2h-2.317c.198-.284,.317-.627,.317-1,0-.967-.784-1.75-1.75-1.75s-1.75,.783-1.75,1.75c0,.373,.118,.716,.317,1h-2.317c-1.105,0-2,.896-2,2v2.317c-.284-.198-.628-.317-1-.317-.966,0-1.75,.783-1.75,1.75s.784,1.75,1.75,1.75c.372,0,.716-.118,1-.317v2.317c0,1.104,.895,2,2,2h2.317c-.198-.284-.317-.627-.317-1,0-.967,.784-1.75,1.75-1.75s1.75,.783,1.75,1.75c0,.373-.118,.716-.317,1h2.317c1.105,0,2-.896,2-2v-2.317c-.284,.198-.628,.317-1,.317-.966,0-1.75-.783-1.75-1.75s.784-1.75,1.75-1.75Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect width="14" height="14" rx="4" fill="#3a8bff"/><path d="M3 3l4.5 8 1.3-3.1L11.6 7 3 3z" fill="#fff"/></svg></span>
-      </div>
-      <div class="browser-body">
-        <div class="page-side">
-          <div class="page-nav"><span class="pnav-logo">faraway</span><span class="pnav">Trips</span><span class="pnav">Journal</span><span class="pnav">Gear</span><span class="pnav">About</span></div>
-          <p class="page-h">Go farther with less.</p>
-          <p class="page-sub-t">Light-packing guides, weekend routes and field notes from people who travel with one bag.</p>
-          <span class="page-btn">Plan a weekend</span>
-        </div>
-        <div class="panel">
-          <div class="panel-head"><span class="logo-mark" style="width:16px;height:16px;border-radius:4px"><svg width="9" height="9" viewBox="0 0 12 12" fill="none"><path d="M2 2l4 8 1.4-3.2L10.6 6 2 2z" fill="#fff"/></svg></span>Spectra</div>
-          <div class="panel-tabs"><span class="ptab">Styles</span><span class="ptab on">Assets</span><span class="ptab">Inspect</span><span class="ptab">Design</span></div>
-          <div class="panel-tools"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="13" height="13"><path d="M15.75 15.75L11.6386 11.6386" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.35"></path><path d="M7.75 13.25C10.7875 13.25 13.25 10.7875 13.25 7.75C13.25 4.7125 10.7875 2.25 7.75 2.25C4.7125 2.25 2.25 4.7125 2.25 7.75C2.25 10.7875 4.7125 13.25 7.75 13.25Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="13" height="13"><path d="M3.762,14.989l6.074-6.075c.781-.781,2.047-.781,2.828,0l2.586,2.586" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></path><rect x="2.75" y="2.75" width="12.5" height="12.5" rx="2" ry="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></rect><circle cx="6.25" cy="7.25" r="1.25" fill="currentColor" data-stroke="none" opacity="0.35"></circle></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="13" height="13"><polyline points="11.5 5.75 9 8.25 6.5 5.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></polyline><line x1="9" y1="8.25" x2="9" y2="2.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></line><path d="M16.214,9.75h-4.464v1c0,.552-.448,1-1,1h-3.5c-.552,0-1-.448-1-1v-1H1.787" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12,2.75h.137c.822,0,1.561,.503,1.862,1.269l2.113,5.379c.092,.233,.138,.481,.138,.731v3.121c0,1.105-.895,2-2,2H3.75c-1.105,0-2-.895-2-2v-3.121c0-.25,.047-.498,.138-.731l2.113-5.379c.301-.765,1.039-1.269,1.862-1.269h.137" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="13" height="13"><path d="M8.36909 6.8934C8.06649 7.0539 7.78239 7.2617 7.52799 7.517L7.51799 7.527C6.13699 8.908 6.13699 11.146 7.51799 12.527L9.69299 14.702C11.074 16.083 13.312 16.083 14.693 14.702L14.703 14.692C16.084 13.311 16.084 11.073 14.703 9.692L13.9406 8.9296" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.35"></path><path d="M9.63289 11.1066C9.93549 10.9461 10.2196 10.7383 10.474 10.483L10.484 10.473C11.865 9.09199 11.865 6.85399 10.484 5.47299L8.30899 3.29799C6.92799 1.91699 4.68999 1.91699 3.30899 3.29799L3.29899 3.30799C1.91799 4.68899 1.91799 6.92699 3.29899 8.30799L4.06139 9.07039" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="13" height="13"><line x1="6.25" y1="4.237" x2="9" y2="9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></line><line x1="6.25" y1="13.764" x2="9" y2="9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></line><line x1="14.5" y1="9" x2="9" y2="9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"></line><circle cx="9" cy="9" r="5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="9" y1="1.75" x2="9" y2="3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.721" y1="5.375" x2="4.237" y2="6.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="1.75" y1="9" x2="3.5" y2="9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="16.25" y1="9" x2="14.5" y2="9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.721" y1="12.625" x2="4.237" y2="11.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="9" y1="16.25" x2="9" y2="14.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="12.625" y1="15.279" x2="11.75" y2="13.763" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="5.375" y1="15.279" x2="6.25" y2="13.763" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="15.279" y1="12.625" x2="13.763" y2="11.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="15.279" y1="5.375" x2="13.763" y2="6.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="12.625" y1="2.721" x2="11.75" y2="4.237" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line><line x1="5.375" y1="2.721" x2="6.25" y2="4.237" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line></svg></div>
-          <div class="panel-list">
-            <div class="prow"><span class="thumb" style="background:linear-gradient(135deg,#f6d365,#fda085)"></span><span class="meta"><b>hero-poster.png</b><span>1440 &times; 900</span></span><span class="size">812 KB</span></div>
-            <div class="prow"><span class="thumb" style="background:linear-gradient(135deg,#a1c4fd,#c2e9fb)"></span><span class="meta"><b>logo-mark.svg</b><span>vector</span></span><span class="size">4 KB</span></div>
-            <div class="prow"><span class="thumb" style="background:linear-gradient(135deg,#84fab0,#8fd3f4)"></span><span class="meta"><b>icon-arrow.svg</b><span>vector</span></span><span class="size">2 KB</span></div>
-            <div class="prow"><span class="thumb" style="background:linear-gradient(135deg,#fccb90,#d57eeb)"></span><span class="meta"><b>demo-loop.mp4</b><span>1280 &times; 720</span></span><span class="size">1.9 MB</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<p class="proof"><b>4.9</b> stars · <b>18,000+</b> designers</p>
+<h1>Read any website’s
+    <span class="scribble">design<svg fill="none" viewbox="0 0 120 44"><path d="M8 30C20 12 52 6 78 9c24 3 36 12 32 22-4 11-30 13-54 11-22-2-44-7-46-16-2-8 14-15 34-17" stroke="#0f7fff" stroke-linecap="round" stroke-width="4.5"></path></svg></span>. In one click.</h1>
+<p class="lede">Spectra is a browser extension that reads colors, type, spacing and assets off any live page, and hands them to your stack as ready-to-use tokens.</p>
+<div class="cta-row">
+<a class="btn btn-primary" href="#pricing"><svg fill="none" height="16" viewbox="0 0 16 16" width="16"><circle cx="8" cy="8" r="7" stroke="#0b0b0d" stroke-width="1.5"></circle><circle cx="8" cy="8" fill="#0b0b0d" r="2.6"></circle></svg>add to browser</a>
+<a class="btn btn-ghost" href="#features"><svg fill="none" height="14" viewbox="0 0 14 14" width="14"><path d="M2 2l5 10 1.2-3.4L11.6 7.4 2 2z" fill="#101013"></path></svg>try it live</a>
 </div>
-
-<figure class="showcase"><img src="./showcase.jpg" alt="Spectra browser extension panel reading colors, typography, spacing and assets from a webpage" width="1429" height="804" loading="lazy"></figure><!-- features -->
+<div class="stage">
+<div class="inspect-chip">
+<span class="tag">img · 894 × 447</span>
+<span><span class="fname">hero-poster.png</span><br/><span class="fdim">1440 × 900 · 812 KB</span></span>
+</div>
+<div class="browser">
+<div class="chrome-bar">
+<span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span>
+<span class="urlbar">faraway.travel</span>
+<span class="chrome-icons"><svg height="14" viewbox="0 0 18 18" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 12.75L10.75 15L8.5 17.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.655 4.505C3.4774 5.6413 2.75 7.2359 2.75 9C2.75 12.452 5.55 15.25 9 15.25C9.6 15.25 10.17 15.166 10.72 15.01" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.5 5.25L7.25 3L9.5 0.75" fill="none" opacity="0.35" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13.3444 13.4937C14.5146 12.3575 15.25 10.7634 15.25 9C15.25 5.548 12.45 2.75 9.00002 2.75C8.42002 2.75 7.86002 2.82895 7.33002 2.97595" fill="none" opacity="0.35" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg height="14" viewbox="0 0 18 18" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M14.25,16.25l-5.25-3.5-5.25,3.5V3.75c0-1.105,.895-2,2-2h6.5c1.105,0,2,.895,2,2v12.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg height="14" viewbox="0 0 18 18" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M14.75,8.25c.372,0,.716,.118,1,.317v-2.317c0-1.104-.895-2-2-2h-2.317c.198-.284,.317-.627,.317-1,0-.967-.784-1.75-1.75-1.75s-1.75,.783-1.75,1.75c0,.373,.118,.716,.317,1h-2.317c-1.105,0-2,.896-2,2v2.317c-.284-.198-.628-.317-1-.317-.966,0-1.75,.783-1.75,1.75s.784,1.75,1.75,1.75c.372,0,.716-.118,1-.317v2.317c0,1.104,.895,2,2,2h2.317c-.198-.284-.317-.627-.317-1,0-.967,.784-1.75,1.75-1.75s1.75,.783,1.75,1.75c0,.373-.118,.716-.317,1h2.317c1.105,0,2-.896,2-2v-2.317c-.284,.198-.628,.317-1,.317-.966,0-1.75-.783-1.75-1.75s.784-1.75,1.75-1.75Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg fill="none" height="14" viewbox="0 0 14 14" width="14"><rect fill="#3a8bff" height="14" rx="4" width="14"></rect><path d="M3 3l4.5 8 1.3-3.1L11.6 7 3 3z" fill="#fff"></path></svg></span>
+</div>
+<div class="browser-body">
+<div class="page-side">
+<div class="page-nav"><span class="pnav-logo">faraway</span><span class="pnav">Trips</span><span class="pnav">Journal</span><span class="pnav">Gear</span><span class="pnav">About</span></div>
+<p class="page-h">Go farther with less.</p>
+<p class="page-sub-t">Light-packing guides, weekend routes and field notes from people who travel with one bag.</p>
+<span class="page-btn">Plan a weekend</span>
+</div>
+<div class="panel">
+<div class="panel-head"><span class="logo-mark" style="width:16px;height:16px;border-radius:4px"><svg fill="none" height="9" viewbox="0 0 12 12" width="9"><path d="M2 2l4 8 1.4-3.2L10.6 6 2 2z" fill="#fff"></path></svg></span>Spectra</div>
+<div class="panel-tabs"><span class="ptab">Styles</span><span class="ptab on">Assets</span><span class="ptab">Inspect</span><span class="ptab">Design</span></div>
+<div class="panel-tools"><svg height="13" viewbox="0 0 18 18" width="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.75 15.75L11.6386 11.6386" fill="none" opacity="0.35" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7.75 13.25C10.7875 13.25 13.25 10.7875 13.25 7.75C13.25 4.7125 10.7875 2.25 7.75 2.25C4.7125 2.25 2.25 4.7125 2.25 7.75C2.25 10.7875 4.7125 13.25 7.75 13.25Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg height="13" viewbox="0 0 18 18" width="13" xmlns="http://www.w3.org/2000/svg"><path d="M3.762,14.989l6.074-6.075c.781-.781,2.047-.781,2.828,0l2.586,2.586" fill="none" opacity="0.35" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><rect fill="none" height="12.5" rx="2" ry="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="12.5" x="2.75" y="2.75"></rect><circle cx="6.25" cy="7.25" data-stroke="none" fill="currentColor" opacity="0.35" r="1.25"></circle></svg><svg height="13" viewbox="0 0 18 18" width="13" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" opacity="0.35" points="11.5 5.75 9 8.25 6.5 5.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></polyline><line fill="none" opacity="0.35" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="9" x2="9" y1="8.25" y2="2.75"></line><path d="M16.214,9.75h-4.464v1c0,.552-.448,1-1,1h-3.5c-.552,0-1-.448-1-1v-1H1.787" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12,2.75h.137c.822,0,1.561,.503,1.862,1.269l2.113,5.379c.092,.233,.138,.481,.138,.731v3.121c0,1.105-.895,2-2,2H3.75c-1.105,0-2-.895-2-2v-3.121c0-.25,.047-.498,.138-.731l2.113-5.379c.301-.765,1.039-1.269,1.862-1.269h.137" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg height="13" viewbox="0 0 18 18" width="13" xmlns="http://www.w3.org/2000/svg"><path d="M8.36909 6.8934C8.06649 7.0539 7.78239 7.2617 7.52799 7.517L7.51799 7.527C6.13699 8.908 6.13699 11.146 7.51799 12.527L9.69299 14.702C11.074 16.083 13.312 16.083 14.693 14.702L14.703 14.692C16.084 13.311 16.084 11.073 14.703 9.692L13.9406 8.9296" fill="none" opacity="0.35" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.63289 11.1066C9.93549 10.9461 10.2196 10.7383 10.474 10.483L10.484 10.473C11.865 9.09199 11.865 6.85399 10.484 5.47299L8.30899 3.29799C6.92799 1.91699 4.68999 1.91699 3.30899 3.29799L3.29899 3.30799C1.91799 4.68899 1.91799 6.92699 3.29899 8.30799L4.06139 9.07039" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg height="13" viewbox="0 0 18 18" width="13" xmlns="http://www.w3.org/2000/svg"><line fill="none" opacity="0.35" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="6.25" x2="9" y1="4.237" y2="9"></line><line fill="none" opacity="0.35" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="6.25" x2="9" y1="13.764" y2="9"></line><line fill="none" opacity="0.35" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="14.5" x2="9" y1="9" y2="9"></line><circle cx="9" cy="9" fill="none" r="5.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></circle><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="9" x2="9" y1="1.75" y2="3.5"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="2.721" x2="4.237" y1="5.375" y2="6.25"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="1.75" x2="3.5" y1="9" y2="9"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="16.25" x2="14.5" y1="9" y2="9"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="2.721" x2="4.237" y1="12.625" y2="11.75"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="9" x2="9" y1="16.25" y2="14.5"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="12.625" x2="11.75" y1="15.279" y2="13.763"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="5.375" x2="6.25" y1="15.279" y2="13.763"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="15.279" x2="13.763" y1="12.625" y2="11.75"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="15.279" x2="13.763" y1="5.375" y2="6.25"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="12.625" x2="11.75" y1="2.721" y2="4.237"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" x1="5.375" x2="6.25" y1="2.721" y2="4.237"></line></svg></div>
+<div class="panel-list">
+<div class="prow"><span class="thumb" style="background:linear-gradient(135deg,#f6d365,#fda085)"></span><span class="meta"><b>hero-poster.png</b><span>1440 × 900</span></span><span class="size">812 KB</span></div>
+<div class="prow"><span class="thumb" style="background:linear-gradient(135deg,#a1c4fd,#c2e9fb)"></span><span class="meta"><b>logo-mark.svg</b><span>vector</span></span><span class="size">4 KB</span></div>
+<div class="prow"><span class="thumb" style="background:linear-gradient(135deg,#84fab0,#8fd3f4)"></span><span class="meta"><b>icon-arrow.svg</b><span>vector</span></span><span class="size">2 KB</span></div>
+<div class="prow"><span class="thumb" style="background:linear-gradient(135deg,#fccb90,#d57eeb)"></span><span class="meta"><b>demo-loop.mp4</b><span>1280 × 720</span></span><span class="size">1.9 MB</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<figure class="showcase"><img alt="Spectra browser extension panel reading colors, typography, spacing and assets from a webpage" height="804" loading="lazy" src="./showcase.jpg" width="1429"/></figure><!-- features -->
 <section id="features">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Everything a page is made of.</h2>
-      <p class="sec-sub">Open Spectra on any site and read it like a design file.</p>
-    </div>
-    <div class="grid">
-      <div class="card">
-        <div class="mock"><span class="size-tag">button &middot; 172 &times; 44</span><span class="demo-btn">add to browser</span></div>
-        <h3>Point at anything</h3>
-        <p>Hover to measure it, click to pull its styles. Real computed values, not guesses.</p>
-      </div>
-      <div class="card">
-        <div class="mock">
-          <span class="sw" style="background:#2f6bff"></span><span class="sw" style="background:#101013"></span><span class="sw" style="background:#6b7280"></span><span class="sw" style="background:#e5e7eb"></span>
-          <span class="contrast-note">#3F3F46 on #FFF</span><span class="contrast">9.12 AAA</span>
-        </div>
-        <h3>Every color, graded</h3>
-        <p>The full palette with contrast ratios and a WCAG pass or fail beside each pair.</p>
-      </div>
-      <div class="card">
-        <div class="mock">
-          <span><span class="aa" style="font-size:44px">Aa</span><span class="aa-sub" style="display:block">56px</span></span>
-          <span><span class="aa" style="font-size:22px">Aa</span><span class="aa-sub" style="display:block">18px</span></span>
-          <span><span class="aa" style="font-size:15px">Aa</span><span class="aa-sub" style="display:block">14px</span></span>
-          <span class="aa-sub" style="width:100%">Inter &middot; 400&ensp;500&ensp;600&ensp;700</span>
-        </div>
-        <h3>Type, measured</h3>
-        <p>Families, weights, sizes and line heights, with a link back to the source.</p>
-      </div>
-      <div class="card">
-        <div class="mock">
-          <span class="chip">21 svg</span><span class="chip">9 png</span><span class="chip">2 mp4</span><span class="chip">1 lottie</span><span class="chip dark">.zip</span>
-          <span class="aa-sub" style="width:100%">33 files &middot; 1.8 MB</span>
-        </div>
-        <h3>Assets in one click</h3>
-        <p>Images, icons, videos and Lottie files. One at a time or as a single zip.</p>
-      </div>
-      <div class="card">
-        <div class="mock">
-          <span class="vars"><b>--brand</b><span>#2f6bff</span><b>--radius-lg</b><span>18px</span><b>--text-md</b><span>16px/1.6</span><b>--shadow-sm</b><span>0 1px 3px</span></span>
-        </div>
-        <h3>A whole design system</h3>
-        <p>Color scales, type scale, radii and shadows, exported as CSS, SCSS or JSON.</p>
-      </div>
-      <div class="card">
-        <div class="mock">
-          <span class="codemock"><span class="f"># SPEC.md</span><br><span class="c">## Colors</span><br>- brand: #2f6bff<br><span class="c">## Type</span><br>- display: 56/1.1</span>
-        </div>
-        <h3>SPEC.md for your AI</h3>
-        <p>A spec your coding agent can build from, instead of a screenshot it cannot see.</p>
-      </div>
-    </div>
-
-    <div class="wide-grid" style="margin-top:20px">
-      <div class="wide-card">
-        <span class="hover-note">hover to open</span>
-        <div class="cloud">
-          <span class="chip">hero photo</span><span class="chip">portrait</span><span class="chip">cover art</span><span class="chip">product shot</span><span class="chip">banner</span><span class="chip">thumbnail</span><span class="chip">demo video</span><span class="chip">screen capture</span><span class="chip">logo</span><span class="chip dark">close icon</span><span class="chip dark">play icon</span>
-        </div>
-        <h3>Everything it reads</h3>
-        <p>Colors, type, spacing, shadows and radii, plus every asset on the page, pulled straight off the live DOM.</p>
-      </div>
-      <div class="wide-card">
-        <span class="hover-note">hover to open</span>
-        <div class="cloud">
-          <span class="chip">Tailwind v4</span><span class="chip">shadcn/ui</span><span class="chip">DTCG</span><span class="chip">CSS vars</span><span class="chip">SCSS</span><span class="chip">JSON</span><span class="chip">SPEC.md</span><span class="chip dark">.zip</span>
-        </div>
-        <h3>Everywhere it exports</h3>
-        <p>Utility config, component tokens or a SPEC.md your coding agent can build from.</p>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="sec-head">
+<h2>Everything a page is made of.</h2>
+<p class="sec-sub">Open Spectra on any site and read it like a design file.</p>
+</div>
+<div class="grid">
+<div class="card">
+<div class="mock"><div class="capture"><header><b>Button inspector</b><span>Captured from live page</span></header><div class="site"><small>MONO / GOODS</small><b>Objects for<br/>quiet desks.</b><button>Shop collection</button><em>button.primary · 172×44</em></div></div></div>
+<h3>Point at anything</h3>
+<p>Hover to measure it, click to pull its styles. Real computed values, not guesses.</p>
+</div>
+<div class="card">
+<div class="mock"><div class="capture"><header><b>Palette capture</b><span>Captured from live page</span></header><div class="palette"><b>SLOW<br/>MORNINGS</b><aside><i>#F66C54</i><i>#FFD991</i><i>#183044</i><i>#F7F1E7</i></aside></div></div></div>
+<h3>Every color, graded</h3>
+<p>The full palette with contrast ratios and a WCAG pass or fail beside each pair.</p>
+</div>
+<div class="card">
+<div class="mock"><div class="capture"><header><b>Type scale</b><span>Captured from live page</span></header><div class="typer"><small>INTER / VARIABLE</small><b>Aa</b><aside>Display 56<br/>Heading 32<br/>Body 16</aside></div></div></div>
+<h3>Type, measured</h3>
+<p>Families, weights, sizes and line heights, with a link back to the source.</p>
+</div>
+<div class="card">
+<div class="mock"><div class="capture"><header><b>Asset library</b><span>Captured from live page</span></header><div class="assets"><i>SVG</i><i>PNG</i><i>WEBP</i><i>MP4</i><footer>33 assets <button>Export .zip</button></footer></div></div></div>
+<h3>Assets in one click</h3>
+<p>Images, icons, videos and Lottie files. One at a time or as a single zip.</p>
+</div>
+<div class="card">
+<div class="mock"><div class="capture"><header><b>Token export</b><span>Captured from live page</span></header><div class="code"><b>tokens.css</b><pre>:root {
+ --brand: #2f6bff;
+ --radius-lg: 18px;
+ --space-4: 16px;
+}</pre></div></div></div>
+<h3>A whole design system</h3>
+<p>Color scales, type scale, radii and shadows, exported as CSS, SCSS or JSON.</p>
+</div>
+<div class="card">
+<div class="mock"><div class="capture"><header><b>Spec handoff</b><span>Captured from live page</span></header><div class="spec"><b>SPEC.md</b><small>COLORS</small><div><i></i><i></i><i></i></div><small>COMPONENT</small><strong>Button · Primary · lg</strong><small>ACCESSIBILITY</small><strong>Contrast 9.12 · AAA</strong></div></div></div>
+<h3>SPEC.md for your AI</h3>
+<p>A spec your coding agent can build from, instead of a screenshot it cannot see.</p>
+</div>
+</div>
+<div class="wide-grid" style="margin-top:20px">
+<div class="wide-card">
+<span class="hover-note">hover to open</span>
+<div class="cloud">
+<span class="chip">hero photo</span><span class="chip">portrait</span><span class="chip">cover art</span><span class="chip">product shot</span><span class="chip">banner</span><span class="chip">thumbnail</span><span class="chip">demo video</span><span class="chip">screen capture</span><span class="chip">logo</span><span class="chip dark">close icon</span><span class="chip dark">play icon</span>
+</div>
+<h3>Everything it reads</h3>
+<p>Colors, type, spacing, shadows and radii, plus every asset on the page, pulled straight off the live DOM.</p>
+</div>
+<div class="wide-card">
+<span class="hover-note">hover to open</span>
+<div class="cloud">
+<span class="chip">Tailwind v4</span><span class="chip">shadcn/ui</span><span class="chip">DTCG</span><span class="chip">CSS vars</span><span class="chip">SCSS</span><span class="chip">JSON</span><span class="chip">SPEC.md</span><span class="chip dark">.zip</span>
+</div>
+<h3>Everywhere it exports</h3>
+<p>Utility config, component tokens or a SPEC.md your coding agent can build from.</p>
+</div>
+</div>
+</div>
 </section>
-
 <!-- pricing -->
 <section id="pricing">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Inspecting is free. Forever.</h2>
-      <p class="sec-sub">Plans only differ in how much you take with you.</p>
-    </div>
-    <div class="plans">
-      <div class="plan">
-        <span class="tier">Free</span>
-        <p class="pdesc">For side projects and Friday-night browsing.</p>
-        <p class="price">$0<small> / month</small></p>
-        <a class="btn btn-ghost" href="#">add to browser</a>
-        <ul class="feat">
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Unlimited element inspections</li>
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>100 asset downloads /mo</li>
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>5 design system exports /mo</li>
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>2 page snapshots /mo</li>
-        </ul>
-      </div>
-      <div class="plan popular">
-        <span class="tier pop-tier">Plus &middot; most popular</span>
-        <p class="pdesc">For designers and builders who do this daily.</p>
-        <p class="price">$6<small> / month</small></p>
-        <a class="btn btn-primary" href="#">add to browser</a>
-        <ul class="feat">
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Unlimited element inspections</li>
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>1,000 asset downloads /mo</li>
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>30 design system exports /mo</li>
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>15 page snapshots /mo</li>
-        </ul>
-      </div>
-      <div class="plan">
-        <span class="tier">Team</span>
-        <p class="pdesc">For studios with shared libraries and workflows.</p>
-        <p class="price">$10<small> / month</small></p>
-        <a class="btn btn-ghost" href="#">add to browser</a>
-        <ul class="feat">
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Unlimited element inspections</li>
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Unlimited asset downloads</li>
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Unlimited design system exports</li>
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>50 page snapshots /mo</li>
-          <li><svg width="15" height="15" viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7.5" fill="#101013"/><path d="M4.5 7.8l2 2 4-4.4" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Priority support</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="sec-head">
+<h2>Inspecting is free. Forever.</h2>
+<p class="sec-sub">Plans only differ in how much you take with you.</p>
+</div>
+<div class="plans">
+<div class="plan">
+<span class="tier">Free</span>
+<p class="pdesc">For side projects and Friday-night browsing.</p>
+<p class="price">$0<small> / month</small></p>
+<a class="btn btn-ghost" href="#">add to browser</a>
+<ul class="feat">
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>Unlimited element inspections</li>
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>100 asset downloads /mo</li>
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>5 design system exports /mo</li>
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>2 page snapshots /mo</li>
+</ul>
+</div>
+<div class="plan popular">
+<span class="tier pop-tier">Plus · most popular</span>
+<p class="pdesc">For designers and builders who do this daily.</p>
+<p class="price">$6<small> / month</small></p>
+<a class="btn btn-primary" href="#">add to browser</a>
+<ul class="feat">
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>Unlimited element inspections</li>
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>1,000 asset downloads /mo</li>
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>30 design system exports /mo</li>
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>15 page snapshots /mo</li>
+</ul>
+</div>
+<div class="plan">
+<span class="tier">Team</span>
+<p class="pdesc">For studios with shared libraries and workflows.</p>
+<p class="price">$10<small> / month</small></p>
+<a class="btn btn-ghost" href="#">add to browser</a>
+<ul class="feat">
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>Unlimited element inspections</li>
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>Unlimited asset downloads</li>
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>Unlimited design system exports</li>
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>50 page snapshots /mo</li>
+<li><svg height="15" viewbox="0 0 15 15" width="15"><circle cx="7.5" cy="7.5" fill="#101013" r="7.5"></circle><path d="M4.5 7.8l2 2 4-4.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.6"></path></svg>Priority support</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-
 <!-- testimonials -->
 <section>
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>What people actually say.</h2>
-    </div>
-    <div class="masonry">
-      <div class="tcard">
-        <div class="thead"><img class="avatar" style="background:#5b8def" src="assets/av-mira.svg" alt="Mira Kulkarni" width="34" height="34"><span><span class="tname">Mira Kulkarni</span><br><span class="tdate">May 3, 2026</span></span><span class="stars">★★★★★</span></div>
-        <p>Pulled a full palette and type scale off a site I admire in about ten seconds. This replaced three other tools for me.</p>
-      </div>
-      <div class="tcard social">
-        <span class="thandle">@pixels.and coffee <span>↗</span></span>
-        <p>POV: you stop rebuilding buttons from screenshots because the tokens are just&hellip; there.</p>
-      </div>
-      <div class="tcard">
-        <div class="thead"><img class="avatar" style="background:#e2725b" src="assets/av-junaid.svg" alt="Junaid Ansari" width="34" height="34"><span><span class="tname">Junaid Ansari</span><br><span class="tdate">Jun 18, 2026</span></span><span class="stars">★★★★★</span></div>
-        <p>The contrast grading is the quiet killer feature. I ship fewer accessibility fixes than I used to, by a lot.</p>
-      </div>
-      <div class="tcard">
-        <div class="thead"><img class="avatar" style="background:#8a5cf6" src="assets/av-petra.svg" alt="Petra Novak" width="34" height="34"><span><span class="tname">Petra Novak</span><br><span class="tdate">Jul 9, 2026</span></span><span class="stars">★★★★★</span></div>
-        <p>Clean interface, no DevTools required. I hand the SPEC.md straight to my coding agent and the first draft is 80% right.</p>
-      </div>
-      <div class="tcard social">
-        <span class="thandle">@buildinpublic.ola <span>↗</span></span>
-        <p>day 41 of recreating sites I like: this extension is doing most of the measuring and I am not sorry.</p>
-      </div>
-      <div class="tcard">
-        <div class="thead"><img class="avatar" style="background:#28a08c" src="assets/av-diya.svg" alt="Diya Menon" width="34" height="34"><span><span class="tname">Diya Menon</span><br><span class="tdate">Aug 1, 2026</span></span><span class="stars">★★★★★</span></div>
-        <p>Asset zip alone is worth it. Every icon and Lottie file on the page, sorted, in one click.</p>
-      </div>
-      <div class="tcard">
-        <div class="thead"><img class="avatar" style="background:#e8a13c" src="assets/av-tomas.svg" alt="Tomas Rivera" width="34" height="34"><span><span class="tname">Tom&aacute;s Rivera</span><br><span class="tdate">Aug 22, 2026</span></span><span class="stars">★★★★★</span></div>
-        <p>I study one landing page a week with it. Fastest way I know to learn what good teams actually ship.</p>
-      </div>
-    </div>
-    <div class="rating-bar">
-      <span class="stack">
-        <img class="avatar" style="background:#5b8def" src="assets/av-mira.svg" alt="Mira Kulkarni" width="34" height="34"><img class="avatar" style="background:#e2725b" src="assets/av-junaid.svg" alt="Junaid Ansari" width="34" height="34"><img class="avatar" style="background:#8a5cf6" src="assets/av-petra.svg" alt="Petra Novak" width="34" height="34"><img class="avatar" style="background:#28a08c" src="assets/av-diya.svg" alt="Diya Menon" width="34" height="34"><span class="avatar more">+34</span>
-      </span>
-      <span class="rating-num">4.9</span><span class="stars">★★★★★</span>
-      <span class="rating-txt">38 reviews on the extension store</span>
-      <a class="rating-link" href="#">Read them all ↗</a>
-    </div>
-  </div>
+<div class="wrap">
+<div class="sec-head">
+<h2>What people actually say.</h2>
+</div>
+<div class="masonry">
+<div class="tcard">
+<div class="thead"><img alt="Mira Kulkarni" class="avatar" height="34" src="assets/av-mira.svg" style="background:#5b8def" width="34"/><span><span class="tname">Mira Kulkarni</span><br/><span class="tdate">May 3, 2026</span></span><span class="stars">★★★★★</span></div>
+<p>Pulled a full palette and type scale off a site I admire in about ten seconds. This replaced three other tools for me.</p>
+</div>
+<div class="tcard social">
+<span class="thandle">@pixels.and coffee <span>↗</span></span>
+<p>POV: you stop rebuilding buttons from screenshots because the tokens are just… there.</p>
+</div>
+<div class="tcard">
+<div class="thead"><img alt="Junaid Ansari" class="avatar" height="34" src="assets/av-junaid.svg" style="background:#e2725b" width="34"/><span><span class="tname">Junaid Ansari</span><br/><span class="tdate">Jun 18, 2026</span></span><span class="stars">★★★★★</span></div>
+<p>The contrast grading is the quiet killer feature. I ship fewer accessibility fixes than I used to, by a lot.</p>
+</div>
+<div class="tcard">
+<div class="thead"><img alt="Petra Novak" class="avatar" height="34" src="assets/av-petra.svg" style="background:#8a5cf6" width="34"/><span><span class="tname">Petra Novak</span><br/><span class="tdate">Jul 9, 2026</span></span><span class="stars">★★★★★</span></div>
+<p>Clean interface, no DevTools required. I hand the SPEC.md straight to my coding agent and the first draft is 80% right.</p>
+</div>
+<div class="tcard social">
+<span class="thandle">@buildinpublic.ola <span>↗</span></span>
+<p>day 41 of recreating sites I like: this extension is doing most of the measuring and I am not sorry.</p>
+</div>
+<div class="tcard">
+<div class="thead"><img alt="Diya Menon" class="avatar" height="34" src="assets/av-diya.svg" style="background:#28a08c" width="34"/><span><span class="tname">Diya Menon</span><br/><span class="tdate">Aug 1, 2026</span></span><span class="stars">★★★★★</span></div>
+<p>Asset zip alone is worth it. Every icon and Lottie file on the page, sorted, in one click.</p>
+</div>
+<div class="tcard">
+<div class="thead"><img alt="Tomas Rivera" class="avatar" height="34" src="assets/av-tomas.svg" style="background:#e8a13c" width="34"/><span><span class="tname">Tomás Rivera</span><br/><span class="tdate">Aug 22, 2026</span></span><span class="stars">★★★★★</span></div>
+<p>I study one landing page a week with it. Fastest way I know to learn what good teams actually ship.</p>
+</div>
+</div>
+<div class="rating-bar">
+<span class="stack">
+<img alt="Mira Kulkarni" class="avatar" height="34" src="assets/av-mira.svg" style="background:#5b8def" width="34"/><img alt="Junaid Ansari" class="avatar" height="34" src="assets/av-junaid.svg" style="background:#e2725b" width="34"/><img alt="Petra Novak" class="avatar" height="34" src="assets/av-petra.svg" style="background:#8a5cf6" width="34"/><img alt="Diya Menon" class="avatar" height="34" src="assets/av-diya.svg" style="background:#28a08c" width="34"/><span class="avatar more">+34</span>
+</span>
+<span class="rating-num">4.9</span><span class="stars">★★★★★</span>
+<span class="rating-txt">38 reviews on the extension store</span>
+<a class="rating-link" href="#">Read them all ↗</a>
+</div>
+</div>
 </section>
-
 <!-- faq -->
 <section id="faq">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Questions? Answers.</h2>
-      <p class="sec-sub">Everything you need to know about Spectra.</p>
-    </div>
-    <div class="faq">
-      <details class="qa"><summary>What exactly does Spectra do?<span class="plus">+</span></summary><p class="a">Spectra turns any live page into an inspectable design reference. It reads colors, fonts, spacing and layout, lists every asset on the page, and can generate a complete exportable design system in one click.</p></details>
-      <details class="qa"><summary>Do I need to know DevTools?<span class="plus">+</span></summary><p class="a">No. Spectra is built so you never open DevTools. Click any element and its styles, colors, fonts and spacing appear in plain language.</p></details>
-      <details class="qa"><summary>What can I extract?<span class="plus">+</span></summary><p class="a">Every visual asset on the page: images, SVG graphics and icons, videos with poster frames, and Lottie animations. Download them individually or as one zip.</p></details>
-      <details class="qa"><summary>How does the design system export work?<span class="plus">+</span></summary><p class="a">One click analyzes the whole page and produces color scales, a type scale, radius and shadow tokens. Export to CSS variables, SCSS, a utility config, or JSON.</p></details>
-      <details class="qa"><summary>Does my browsing data leave my machine?<span class="plus">+</span></summary><p class="a">No. All inspection and extraction runs locally in your browser. Page content is never sent to a server.</p></details>
-      <details class="qa"><summary>What is a page snapshot?<span class="plus">+</span></summary><p class="a">A snapshot saves the current page as a single self-contained HTML file with styles inlined and images embedded, so you can reference it offline.</p></details>
-    </div>
-    <p class="stuck">Still stuck? <a href="#">Email us</a> and a person will reply.</p>
-  </div>
+<div class="wrap">
+<div class="sec-head">
+<h2>Questions? Answers.</h2>
+<p class="sec-sub">Everything you need to know about Spectra.</p>
+</div>
+<div class="faq">
+<details class="qa"><summary>What exactly does Spectra do?<span class="plus">+</span></summary><p class="a">Spectra turns any live page into an inspectable design reference. It reads colors, fonts, spacing and layout, lists every asset on the page, and can generate a complete exportable design system in one click.</p></details>
+<details class="qa"><summary>Do I need to know DevTools?<span class="plus">+</span></summary><p class="a">No. Spectra is built so you never open DevTools. Click any element and its styles, colors, fonts and spacing appear in plain language.</p></details>
+<details class="qa"><summary>What can I extract?<span class="plus">+</span></summary><p class="a">Every visual asset on the page: images, SVG graphics and icons, videos with poster frames, and Lottie animations. Download them individually or as one zip.</p></details>
+<details class="qa"><summary>How does the design system export work?<span class="plus">+</span></summary><p class="a">One click analyzes the whole page and produces color scales, a type scale, radius and shadow tokens. Export to CSS variables, SCSS, a utility config, or JSON.</p></details>
+<details class="qa"><summary>Does my browsing data leave my machine?<span class="plus">+</span></summary><p class="a">No. All inspection and extraction runs locally in your browser. Page content is never sent to a server.</p></details>
+<details class="qa"><summary>What is a page snapshot?<span class="plus">+</span></summary><p class="a">A snapshot saves the current page as a single self-contained HTML file with styles inlined and images embedded, so you can reference it offline.</p></details>
+</div>
+<p class="stuck">Still stuck? <a href="#">Email us</a> and a person will reply.</p>
+</div>
 </section>
 </main>
-
 <footer>
-  <div class="foot-in">
-    <div class="foot-top">
-      <div class="foot-col">
-        <a class="logo" href="#"><span class="logo-mark"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 2l4 8 1.4-3.2L10.6 6 2 2z" fill="#fff"/></svg></span>Spectra</a>
-        <span class="copy">&copy; 2026 Spectra</span>
-      </div>
-      <nav class="foot-links">
-        <a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQs</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Support</a>
-      </nav>
-      <a class="nav-cta" href="#pricing"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="2.6" fill="currentColor"/></svg>Get Spectra</a>
-    </div>
-    <div class="wordmark" aria-hidden="true">
-      <span class="wm" style="background:#101013">s</span><span class="wm inv" style="background:#ff8a3d">p</span><span class="wm inv" style="background:#2fbf71">e</span><span class="wm inv" style="background:#ff4d6d">c</span><span class="wm" style="background:#8a5cf6">t</span><span class="wm inv" style="background:#3a8bff">r</span><span class="wm" style="background:#101013">a</span>
-    </div>
-  </div>
+<div class="foot-in">
+<div class="foot-top">
+<div class="foot-col">
+<a class="logo" href="#"><span class="logo-mark"><svg fill="none" height="12" viewbox="0 0 12 12" width="12"><path d="M2 2l4 8 1.4-3.2L10.6 6 2 2z" fill="#fff"></path></svg></span>Spectra</a>
+<span class="copy">© 2026 Spectra</span>
+</div>
+<nav class="foot-links">
+<a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQs</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Support</a>
+</nav>
+<a class="nav-cta" href="#pricing"><svg fill="none" viewbox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.6"></circle><circle cx="8" cy="8" fill="currentColor" r="2.6"></circle></svg>Get Spectra</a>
+</div>
+<div aria-hidden="true" class="wordmark">
+<span class="wm" style="background:#101013">s</span><span class="wm inv" style="background:#ff8a3d">p</span><span class="wm inv" style="background:#2fbf71">e</span><span class="wm inv" style="background:#ff4d6d">c</span><span class="wm" style="background:#8a5cf6">t</span><span class="wm inv" style="background:#3a8bff">r</span><span class="wm" style="background:#101013">a</span>
+</div>
+</div>
 </footer>
-
-<a class="float-cta" href="#features"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 2l5 10 1.2-3.4L11.6 7.4 2 2z" fill="#101013"/></svg>try spectra on this page</a>
+<a class="float-cta" href="#features"><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M2 2l5 10 1.2-3.4L11.6 7.4 2 2z" fill="#101013"></path></svg>try spectra on this page</a>
 <span class="guest">guest</span>
-
 </body>
 </html>
